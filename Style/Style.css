@@ -1,0 +1,145 @@
+
+
+#page_head {
+ padding-top: 1cm;
+}
+
+#coder {
+  background-image: url('/Assets/source.gif');
+	border-bottom: 3px solid rgba(0, 255, 0, 0.432);
+	box-shadow: 0 20px 20px -20px rgb(0, 0, 0);
+}
+
+.lime {
+  color: lime;
+  letter-spacing: 1px;
+}
+
+.neo {
+  border-top: 3px solid rgba(0, 255, 0, 0.432);
+  box-shadow: 0 20px 20px -20px rgb(0, 0, 0);
+  
+}
+
+.bg-neon {
+  background-color: rgb(0, 0, 0);
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.966);
+ 
+}
+
+#project_titles {
+  font-family: 'nunito';
+  font-style: normal;
+  font-size: 40px;
+  color: lime;
+}
+
+#header {
+  background-image: url('https://media.giphy.com/media/12W5Sg2koWYnwA/giphy.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50%;
+  width: 100%;
+  
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("https://source.unsplash.com/BtbjCFUvBXs/1920x1080");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar-dark .navbar-brand {
+  color: lime;
+}
+
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+  color: lime;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.login-heading {
+  
+  text-align: center;
+  font-family: 'Bungee', cursive;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-shadow: black;
+  color: lime;
+  letter-spacing: 2px;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  min-width: fit-content;
+  min-height: fit-content;
+  max-height: min-content;
+  width: auto;
+  height: auto;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: fixed;
+}
+
+header .overlay {
+  position: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+/*  */
