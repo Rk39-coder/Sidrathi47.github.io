@@ -1,145 +1,222 @@
-
-
-#page_head {
- padding-top: 1cm;
-}
-
-#coder {
-  background-image: url('/Assets/source.gif');
-	border-bottom: 3px solid rgba(0, 255, 0, 0.432);
-	box-shadow: 0 20px 20px -20px rgb(0, 0, 0);
-}
-
-.lime {
-  color: lime;
-  letter-spacing: 1px;
-}
-
-.neo {
-  border-top: 3px solid rgba(0, 255, 0, 0.432);
-  box-shadow: 0 20px 20px -20px rgb(0, 0, 0);
-  
-}
-
-.bg-neon {
-  background-color: rgb(0, 0, 0);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Courgette&family=Epilogue:wght@300;400&family=Nunito:wght@300;600;700&display=swap');
 body {
-  background-color: rgba(0, 0, 0, 0.966);
- 
+    background-color: white;
+    height: 100%;
 }
 
-#project_titles {
-  font-family: 'nunito';
-  font-style: normal;
-  font-size: 40px;
-  color: lime;
+html {
+    position: relative;
+    min-height: 100%;
 }
 
-#header {
-  background-image: url('https://media.giphy.com/media/12W5Sg2koWYnwA/giphy.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 50%;
-  width: 100%;
-  
+.navbar-brand {
+    color: white;
+    font-size: 30px;
+    font-family: serif;
+    letter-spacing: 0.5px;
 }
 
-.masthead {
-  height: 100vh;
-  min-height: 500px;
-  background-image: url("https://source.unsplash.com/BtbjCFUvBXs/1920x1080");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.nav-item,
+.nav-link {
+    color: white;
+    font-size: 20px;
+    font-family: nunito;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: azure;
+    border: 1px solid azure;
+    border-radius: .25rem;
+}
+
+.navbar-brand:hover,
+.nav-item:hover,
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.541);
+}
+
+.jumbotron-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.jumbotron-heading {
+    font-family: Nunito;
+    color: black;
+    text-shadow: black;
+    text-decoration: double;
+}
+
+.card-title {
+    font-family: nunito;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: small;
+}
+
+.btn-lg,
+.btn-lg:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Navbar and Carousel*/
+
+.carousel-caption {
+    color: rgb(255, 255, 255);
+    font-family: 'roboto slab';
+    font-size: 30px;
+}
+
+.foot {
+    height: 1000px;
+}
+
+.carousel-item {
+    height: 55vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mainNavbar {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.black {
+    background-color: rgba(0, 0, 0, 0.822);
+    transition: ease;
+}
+
+.black2 {
+    background-color: rgba(0, 0, 0, 0.404);
+    transition: ease;
 }
 
 .navbar-dark .navbar-brand {
-  color: lime;
+    font-family: 'Source Serif Pro', serif;
 }
 
-.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: lime;
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #080d15;
+    opacity: .7;
 }
 
-.fullscreen-bg {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
+.display-4 {
+    font-size: 50px;
+    font-weight: 20px;
+    font-family: Epilogue;
 }
 
-.fullscreen-bg__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.display-5 {
+    font-family: 'nunito';
+    text-shadow: black;
+    font-size: '25px';
+}
+
+.lead {
+    font-family: 'Source Serif Pro', serif;
+}
+
+.navbar.scrolled {
+    background: rgb(34, 31, 31);
+    transition: ease-in-out 500mx;
+}
+
+.font-weight-light {
+    font-family: 'Source Serif Pro', serif;
 }
 
 
-.login-heading {
-  
-  text-align: center;
-  font-family: 'Bungee', cursive;
-  font-size: 50px;
-  text-transform: uppercase;
-  text-shadow: black;
-  color: lime;
-  letter-spacing: 2px;
+/* Footer */
+
+.social-list {
+    display: inline-flex;
 }
 
-header {
-  position: relative;
-  background-color: black;
-  height: 75vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
+.social-list li {
+    list-style: none;
+    margin-right: 10px;
 }
 
-header video {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  min-width: fit-content;
-  min-height: fit-content;
-  max-height: min-content;
-  width: auto;
-  height: auto;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+ul {
+    padding: 0;
 }
 
-header .container {
-  position: fixed;
+.maincard {
+    position: relative;
+    width: 120px;
+    height: 80px
 }
 
-header .overlay {
-  position: center;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease
 }
 
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
+.thecard:hover {
+    transform: rotateY(180deg)
 }
 
-/*  */
+.thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hidden;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #eee;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    padding: 4px
+}
+
+.theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    border: 1px solid #eee;
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    padding: 4px
+}
+
+.social-text small {
+    font-size: 20px
+}
+
+@media (max-width:600px) {
+    .social-list {
+        display: inline-flex
+    }
+}
+
+.bg-black {
+    background-color: rgb(7, 7, 7);
+    width: 100%;
+    height: 55px;
+}
