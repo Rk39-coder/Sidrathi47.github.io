@@ -7,7 +7,9 @@ body {
 html {
     position: relative;
     min-height: 100%;
+    margin-top: 3.9rem;
     margin: 0 auto;
+    padding: 0 auto;
 }
 
 .navbar-brand {
@@ -83,7 +85,7 @@ html {
 }
 
 .carousel-item {
-    height: 55vh;
+    height: 60vh;
     min-height: 350px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -98,12 +100,12 @@ html {
 }
 
 .black {
-    background-color: rgba(0, 0, 0, 0.822);
+    background-color: rgb(0, 0, 0);
     transition: ease;
 }
 
 .black2 {
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.267);
     transition: ease;
 }
 
@@ -115,7 +117,7 @@ html {
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: #080d15;
+    background-color: #080d15d2;
     opacity: .7;
 }
 

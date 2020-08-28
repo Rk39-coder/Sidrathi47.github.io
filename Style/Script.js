@@ -61,7 +61,7 @@ $(window).on("scroll", function() {
                     var scrollto = $(initial_nav).offset().top - scrolltoOffset;
                     $('html, body').animate({
                         scrollTop: scrollto
-                    }, 1500, 'easeInOutExpo');
+                    }, 30000, 'easeInOutExpo');
                 }
             }
         });
