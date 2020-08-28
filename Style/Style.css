@@ -4,12 +4,15 @@ body {
     height: 100%;
 }
 
+* {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
 html {
     position: relative;
     min-height: 100%;
-    margin-top: 3.9rem;
-    margin: 0 auto;
-    padding: 0 auto;
 }
 
 .navbar-brand {
