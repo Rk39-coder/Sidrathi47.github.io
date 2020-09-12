@@ -1,354 +1,227 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="/Style/bootstrap.min.css">
-    <link rel="stylesheet" href="/Style/Style.css">
-    <link rel="shortcut icon" href="/Assets/icon.svg" type="image/x-icon">
-    <!--Dependencies-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-
-    <title>Portfolio</title>
-
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="Innovator's Portfolio" />
+    <meta name="author" content="Sidharth Rathi" />
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://kit.fontawesome.com/e58ed28e97.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
+<body id="page-top">
 
-
-<body>
-
-    <nav class="navbar mainNavbar black navbar-expand-md py-0">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a href="#" class="navbar-brand">
-                <i class="fab fa-free-code-camp"></i> Sidharth's Portfolio</a> <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks"> <span class="fab fa-adn"></span> </button>
-            <div class="collapse navbar-collapse" id="navLinks">
-                <ul class="navbar-nav ml-auto text-center">
+            <img class="nav-logo small" src="assets/img/logo.png" alt="" />
+            <a class="navbar-brand js-scroll-trigger" href="#page-top"><b>Portfolio</b></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
 
-                    <li class="nav-item m-2"> <a href="#Skills" class="nav-link scrollTo">Skills</a></li>
-                    <li class="nav-item m-2"> <a href="#Projects" class="nav-link scrollTo">Projects</a></li>
-                    <li class="nav-item m-2"> <a href="#About" class="nav-link scrollTo">About</a></li>
-                    <li class="nav-item m-2"> <a href="#Contact" class="nav-link scrollTo">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!--Nav bar ends-->
 
-
-    </nav>
-    <header>
-        <div id="indicators" class="carousel slide shadow" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#indicators" data-slide-to="0" class="active"></li>
-                <li data-target="#indicators" data-slide-to="1"></li>
-                <li data-target="#indicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <!-- Slide One - Set the background image for this slide in the line below -->
-
-                <div class="carousel-item active" style="background-image: url('/Assets/macbook.jpg')">
-                    <div class="overlay"></div>
-                    <div class="carousel-caption  d-md-block">
-                        <h3 class="display-4 p-3  d-md-block">
-                            </i> Coding <i class="fab fa-python"></i> </h3>
-                        <a class="btn btn-outline-light p-2 m-4">Get Started</a>
-                    </div>
-                </div>
-                <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('/Assets/ghost\ writing.jpg')">
-                    <div class="overlay"></div>
-                    <div class="carousel-caption">
-                        <h3 class="display-4 p-3 d-md-block"> Electronics <i class="fab fa-raspberry-pi"></i></h3>
-                        <a class="btn btn-outline-light p-2 m-4">Get Started</a>
-                    </div>
-                </div>
-                <!-- Slide Three - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('/Assets/social-media.jpg')">
-                    <div class="overlay"></div>
-                    <div class="carousel-caption">
-                        <h3 class="display-4 p-3 d-md-block">Cyber Security <i class="fas fa-dice-d6"></i></h3>
-                        <a class="btn btn-outline-light p-2 m-4">Get Started</a>
-                    </div>
-                </div>
+    <!-- Master head-->
+    <header class="masthead">
+        <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                <h1 class="mx-auto my-0">Hey, I'm Sid</h1>
+                <h2 class=" text-white-60 mx-auto mt-2 mb-5">
+                    <b>
+                        Front-end Webdeveloper <br />
+                        &<br />
+                        UI/UX Designer<br /></b>
+                </h2>
+                <a class="btn btn-primary js-scroll-trigger" href="#about">Let's Begin</a>
             </div>
-            <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#indicators" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
         </div>
     </header>
-
-    <div class="container">
-
-        <section id="Skills"> </section>
-
-
-        <!-- Page Content -->
-        <div class="py-2 mt-5">
-            <div class="container">
-                <h1 class="display-4 text-center mb-4">Skills</h1>
-
-
-            </div>
-
-            <hr class="my-2 mb-4">
-
-            <div class="container">
-
-                <div class="album py-5 bg-light shadow">
-
-
-                    <div class="row p-3">
-
-
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-
-                                <img class="card-img-top img-fluid" src="/Assets/html 1.png" alt="Card image cap">
-
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-
-                                <img class="card-img-top img-fluid" src="/Assets/Bootstrap 1.png" alt="Card image cap">
-
-
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-
-                                <img class="card-img-top img-fluid" src="/Assets/Javascript 1.png" alt="Card image cap">
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-
-                                <img class="card-img-top img-fluid" src="/Assets/python 1.png" alt="Card image cap">
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-
-                                <img class="card-img-top img-fluid" src="/Assets/css 1.png" alt="Card image cap">
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-
-                                <img class="card-img-top img-fluid" src="/Assets/php 1.png" alt="Card image cap">
-
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-            </div>
-        </div>
-
-    </div>
-
-    </div>
-
-
-
-    <section id="Projects"> </section>
-
-    <!-- Page Content -->
-    <div class="py-2 mt-5">
+    <!--Master head ends-->
+    <!-- About-->
+    <section class="about-section text-center bg-dark" id="about">
         <div class="container">
-            <h1 class="display-4 text-center mb-4">Projects</h1>
-            <hr class="my-2">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
 
-        </div>
-
-
-
-        <div class="container">
-
-            <div class="album py-5 bg-light shadow">
-
-
-                <div class="row m-auto">
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-
-                            <img class="card-img-top img-thumbnail" src="/Assets/7-tips-every-First-time-founder-should-know-1024x678.jpg" alt="Card image cap">
-
-                            <div class="card-body">
-                                <span class="card-title text-center">"7 tips every First time founder should
-                                        know"</span>
-                                <p class="card-text">Starting your own venture can be a tricky task, especially when you have no previous experience of being a founder. Founding your dream company is....
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-md btn-outline-secondary">Read
-                                                More</button>
-
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
+                    <h2 class=" display-4 text-white mb-4">About Me</h2>
+                    <p class="text-white-50 text-xl-center">
+                        I am Sidharth, Front-end developer and Designer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers but I found myself into Web development since 2018. I enjoy creating beautifully
+                        designed, intuitive and functional websites for all sorts of consumer needs.
 
                 </div>
             </div>
-
         </div>
+    </section>
+    <!-- About ends-->
 
-    </div>
-
-
-
-    <section id="About"> </section>
-
-    <!-- Page Content -->
-    <div class="py-2 mt-5">
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="services">
         <div class="container">
-            <h1 class="display-4 text-center mb-4">About</h1>
-            <hr class="my-2">
-
-        </div>
-
-
-
-        <div class="container">
-
-            <div class="album py-5 bg-light shadow">
-
-
-                <div class="row m-auto">
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-
-                            <img class="card-img-top img-thumbnail" src="/Assets/7-tips-every-First-time-founder-should-know-1024x678.jpg" alt="Card image cap">
-
-                            <div class="card-body">
-                                <span class="card-title text-center">"7 tips every First time founder should
-                                        know"</span>
-                                <p class="card-text">Starting your own venture can be a tricky task, especially when you have no previous experience of being a founder. Founding your dream company is....
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-md btn-outline-secondary">Read
-                                                More</button>
-
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
+            <h1 class="text-black mb-4 text-center"><i class="fas fa-toolbox"></i> Services</h1>
+            <!-- Project One Row-->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/web.jpg" alt="" /></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Front-end Development</h4>
+                                <p class="mb-0 text-white-50">Building fully responsive and SEO friendly Sites using frameworks like Bootstrap4!</p>
+                                <hr class="d-none d-lg-block mb-0 ml-0" />
                             </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
-
-        </div>
-
-    </div>
-
-
-
-
-    <section id="Contact"> </section>
-    <div class="container">
-        <div class="container-fluid mt-2 mb-3 text-center ">
-            <h1 class="display-4 text-center">Contact</h1>
-            <hr class="my-2">
-            <ul class="social-list">
-
-                <li>
-                    <div class="maincard p-3 ">
-                        <div class="thecard">
-                            <div class="thefront text-center py-4">
-                                <div class="social-icon"> <i class="fab fa-2x fa-google-plus-g"></i> </div>
-                            </div>
-                            <div class="theback py-4 px-3 text-center ">
-                                <div class="social-icon"> <i class="fab fa-2x fa-google-plus-g"></i> </div>
+            <!-- Project Two Row-->
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/essential-front-end-development-frameworks.jpg" alt="" /></div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">UI/UX Designing</h4>
+                                <p class="mb-0 text-white-50">From highly interactive and Eye Catching UI's to High fidelity wireframes for products </p>
+                                <hr class="d-none d-lg-block mb-0 mr-0" />
                             </div>
                         </div>
                     </div>
-                </li>
-
-                <li>
-                    <div class="maincard p-3 ">
-                        <div class="thecard">
-                            <div class="thefront text-center py-4 ">
-                                <div class="social-icon"> <i class="fab fa-2x fa-instagram"></i> </div>
-                            </div>
-                            <div class="theback py-4 px-3 text-center ">
-                                <div class="social-icon"> <i class="fab fa-2x fa-instagram"></i> </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-
-                <li>
-                    <div class="maincard p-3">
-                        <div class="thecard">
-                            <div class="thefront text-center py-4">
-                                <div class="social-icon"><i class="fas fa-2x fa-envelope"></i> </div>
-                            </div>
-                            <div class="theback py-4 px-3 text-center ">
-                                <div class="social-icon"> <i class="fas fa-2x fa-envelope"></i> </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-    </div>
-    <footer>
-
-        <div class="bg-black text-muted text-center pt-3 ">
-            <div class="container">
-                Copyright © S.Rathi
+                </div>
             </div>
         </div>
+    </section>
 
+
+    <!--Project 1 -->
+    <section class="projects-section bg-light" id="projects">
+        <div class="container">
+            <h1 class="text-black mb-4 text-center"><i class="fas fa-tasks"></i> Projects</h1>
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-8 col-lg-7">
+
+                    <img class="img-thumbnail" src="assets/img/slayte.png" alt="" />
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>Slayte.in</h4>
+                        <p class="text-black-50 mb-0">
+                            Slayte-India is an E-commerce Fashion Site which deals in Women Clothing and Accessories. It is built using Shopify stock themes.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+
+    </section>
+
+    <!-- Signup-->
+    <section class="signup-section" id="signup">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto text-center">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <h2 class="text-white mb-5">
+                        Subscribe and I'll Reach out to you!
+                    </h2>
+                    <form action="https://Google.com" class="form-inline d-flex " method="GET">
+                        <input name="Email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Email address....." required />
+                        <button class="btn btn-black mx-auto" type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact-->
+    <section class="contact-section bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Address</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50">-----------</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50">
+                                <a href="mailto:Xodedeveloper@gmail.com">Xodedeveloper@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-4" />
+                            <div class="small text-black-50">7696161247</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social d-flex justify-content-center">
+
+
+                <a class="mx-3" href="mailto:Xodedeveloper@gmail.com"><i class="fab fa-google"></i></a>
+                <a class="mx-3" href="https://www.instagram.com/sid_rathi_47/"><i class="fab fa-instagram"></i></a>
+                <a class="mx-3" href="https://github.com/SidRathi47"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container">Copyright © Xodedeveloper 2020</div>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/Style/jquery-3.5.1.slim.min.js"></script>
-
-    <script src="/Style/bootstrap.bundle.min.js"></script>
-    <script src="/Style/Script.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
-
-
 
 </html>
