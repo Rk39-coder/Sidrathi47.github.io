@@ -392,7 +392,7 @@ main {
 
 .item-2,
 .item-3 {
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
 }
 
@@ -478,7 +478,7 @@ main {
 }
 
 #frameworks {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
   position: relative;
   top: 0%;
   z-index: 4;
