@@ -1,0 +1,543 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Baloo+Bhai+2:regular,500,600,700,800);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  outline: none !important;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -o-user-select: none;
+}
+
+/* Scroll bar custom */
+/* The emerging W3C standard
+   that is currently Firefox-only */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #15f4ee black;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: black;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #15f4ee;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.inverse {
+  background-color: rgb(0, 0, 0);
+}
+
+.nav-item {
+  font-family: "poppins";
+  font-size: 1.2rem;
+  padding: 0 0.7rem;
+}
+
+/* Space hero effect */
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+}
+
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #111;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 3;
+}
+
+.large-header {
+  background-image: url("/Assets/demo-bg.jpg");
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.thin {
+  font-family: "poppins";
+}
+
+.main-title {
+  font-family: "baloo bhai 2";
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+  transition: all 240ms;
+
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.6rem;
+  text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
+
+.subtitle {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  font-family: "Baloo bhai 2";
+  transition: all 240ms;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.5rem;
+}
+.main-title .thin {
+  font-weight: 200;
+}
+
+.subtitle:hover {
+  letter-spacing: 1.5rem;
+  text-shadow: 0 0 2px #15f4ee, 0 0 2px #15f4ee;
+}
+
+.neon-cta {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  bottom: 30%;
+  left: 50%;
+  z-index: 3;
+  width: 220px;
+  height: 45px;
+  transform: translate(-50%, -30%);
+  background-color: rgba(15, 15, 15, 0);
+  border-radius: 8px;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.neon-cta {
+  animation: border-flicker 2s linear forwards;
+  animation-delay: 1s;
+}
+
+.neon-cta h1 {
+  font-family: "baloo bhai 2";
+  font-weight: 300;
+  font-size: 2.4em;
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.neon-cta h1 {
+  animation: text-flicker 2s linear forwards;
+  animation-delay: 1s;
+}
+
+.neon-cta .first {
+  animation: letter-flicker 3s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes text-flicker {
+  2% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  3% {
+    color: rgba(120, 0, 50, 0.5);
+    text-shadow: none;
+  }
+  6% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  9% {
+    color: rgba(120, 0, 50, 0.5);
+    text-shadow: none;
+  }
+  11% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  14% {
+    color: rgba(120, 0, 50, 0.5);
+    text-shadow: none;
+  }
+  18% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  32% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  33% {
+    color: rgba(120, 0, 50, 0.5);
+    text-shadow: none;
+  }
+  37% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  39% {
+    color: rgba(120, 0, 50, 0.5);
+    text-shadow: none;
+  }
+  43% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  46% {
+    color: rgba(120, 0, 50, 0.5);
+    text-shadow: none;
+  }
+  47% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  100% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+}
+
+@keyframes letter-flicker {
+  2% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  3% {
+    color: rgba(120, 0, 50, 0.5);
+    text-shadow: none;
+  }
+  6% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  9% {
+    color: rgba(120, 0, 50, 0.5);
+    text-shadow: none;
+  }
+  11% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  14% {
+    color: rgba(120, 0, 50, 0.5);
+    text-shadow: none;
+  }
+  18% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  32% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  33% {
+    color: rgba(120, 0, 50, 0.5);
+    text-shadow: none;
+  }
+  37% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  39% {
+    color: rgba(120, 0, 50, 0.5);
+    text-shadow: none;
+  }
+  40% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+  100% {
+    color: rgb(230, 0, 120);
+    text-shadow: 0 0 15px rgb(230, 0, 120);
+  }
+}
+
+@keyframes border-flicker {
+  2% {
+    border: 3px solid rgb(0, 180, 230);
+    box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+      0 0 12px -1px rgb(0, 180, 230) inset;
+  }
+  3% {
+    border: 3px solid rgb(0, 40, 70);
+    box-shadow: none;
+  }
+  5% {
+    border: 3px solid rgb(0, 180, 230);
+    box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+      0 0 12px -1px rgb(0, 180, 230) inset;
+  }
+  6% {
+    border: 3px solid rgb(0, 40, 70);
+    box-shadow: none;
+  }
+  7% {
+    border: 3px solid rgb(0, 180, 230);
+    box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+      0 0 12px -1px rgb(0, 180, 230) inset;
+  }
+  9% {
+    border: 3px solid rgb(0, 40, 70);
+    box-shadow: none;
+  }
+  13% {
+    border: 3px solid rgb(0, 180, 230);
+    box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+      0 0 12px -1px rgb(0, 180, 230) inset;
+  }
+  16% {
+    border: 3px solid rgb(0, 40, 70);
+    box-shadow: none;
+  }
+  18% {
+    border: 3px solid rgb(0, 180, 230);
+    box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+      0 0 12px -1px rgb(0, 180, 230) inset;
+  }
+  22% {
+    border: 3px solid rgb(0, 40, 70);
+    box-shadow: none;
+  }
+  34% {
+    border: 3px solid rgb(0, 180, 230);
+    box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+      0 0 12px -1px rgb(0, 180, 230) inset;
+  }
+  36% {
+    border: 3px solid rgb(0, 40, 70);
+    box-shadow: none;
+  }
+  54% {
+    border: 3px solid rgb(0, 180, 230);
+    box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+      0 0 12px -1px rgb(0, 180, 230) inset;
+  }
+  100% {
+    border: 3px solid rgb(0, 180, 230);
+    box-shadow: 0 0 15px -1px rgb(0, 180, 230),
+      0 0 12px -1px rgb(0, 180, 230) inset;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.2rem;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .subtitle:hover {
+    letter-spacing: 0.6rem;
+  }
+}
+
+main {
+  background-image: url("/Assets/background-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  width: 100%;
+}
+
+#about {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  top: 0;
+  height: auto;
+  background: rgba(0, 0, 0, 0.926);
+  padding: 2rem;
+}
+
+.item-2,
+.item-3 {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+.item-2 {
+  animation-name: anim-2;
+}
+
+.item-3 {
+  animation-name: anim-3;
+}
+
+@keyframes anim-2 {
+  0%,
+  33.33% {
+    left: -100%;
+    opacity: 0;
+  }
+  41.63%,
+  58.29% {
+    left: 25%;
+    opacity: 1;
+  }
+}
+
+@keyframes anim-3 {
+  0%,
+  66.66% {
+    left: -100%;
+    opacity: 0;
+  }
+  74.96%,
+  91.62% {
+    left: 25%;
+    opacity: 1;
+  }
+}
+
+.section-title {
+  margin-top: 5%;
+  font-size: 3rem;
+  font-family: "montserrat";
+  font-weight: 150;
+  color: white;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 1s;
+}
+
+.section-title:hover {
+  text-shadow: 0 0 10px #15f4ee, 0 0 10px #15f4ee;
+}
+.section-para {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "montserrat";
+  font-weight: 2000;
+  color: white;
+}
+
+#skills {
+  background-color: rgba(0, 0, 0, 0.926);
+  position: relative;
+  top: 0%;
+  z-index: 4;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+
+.progress {
+  height: 40px;
+}
+
+.bg-info {
+  font-size: 1rem;
+  font-family: "poppins";
+  box-shadow: 0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee,
+    0 5px 30px 0 #15f4ee inset, 0 5px 30px 0 #15f4ee;
+}
+
+#frameworks {
+  background-color: rgba(0, 0, 0, 0.926);
+  position: relative;
+  top: 0%;
+  z-index: 4;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+
+.neon-btn {
+  position: relative;
+  text-align: center;
+  width: 0.7rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  color: #15f4ee;
+  font-family: poppins;
+  font-weight: 400;
+  border: 3px solid #15f4ee;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 1.1s;
+}
+
+.neon-btn:hover {
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 20px 0 #15f4ee,
+    0 5px 20px 0 #15f4ee inset, 0 5px 20px 0 #15f4ee;
+  text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+  color: black;
+}
+
+#projects {
+  background-color: rgba(0, 0, 0, 0.926);
+  position: relative;
+  top: 0%;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.nav-link {
+  color: #15f4ee;
+}
+
+.nav-link:hover {
+  color: #15f4edc7;
+}
+
+ .card-text , .card-title{
+  color: white;
+}
+
+.card {
+  padding: 0.5rem;
+}
+
+.bg-dark {
+  
+  background-color: #000000a1 !important;
+}
