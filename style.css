@@ -543,5 +543,6 @@ main {
 }
 
 .card-img-top {
-  min-width: 100px;
+  height: auto;
+  width: auto;
 }
