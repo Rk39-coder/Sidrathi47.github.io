@@ -478,7 +478,7 @@ main {
 }
 
 #frameworks {
-  background-color: rgba(0, 0, 0, 0.926);
+  background-color: rgba(0, 0, 0, 0.426);
   position: relative;
   top: 0%;
   z-index: 4;
@@ -512,7 +512,7 @@ main {
 }
 
 #projects {
-  background-color: rgba(0, 0, 0, 0.926);
+  background-color: rgba(0, 0, 0, 0.526);
   position: relative;
   top: 0%;
   z-index: 5;
