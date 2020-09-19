@@ -478,7 +478,7 @@ main {
 }
 
 #frameworks {
-  background-color: rgba(0, 0, 0, 0.126);
+  background-color: transparent;
   position: relative;
   top: 0%;
   z-index: 4;
