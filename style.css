@@ -541,3 +541,7 @@ main {
   
   background-color: #000000a1 !important;
 }
+
+.card-img-top {
+  min-width: 100px;
+}
