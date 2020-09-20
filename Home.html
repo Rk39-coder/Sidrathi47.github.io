@@ -17,37 +17,38 @@
 
 <body>
     <header>
+        <nav class="navbar inverse fixed-top navbar-dark">
+            <ul class="nav m-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+                </li>
+              
+                </ul>
 
+            </div>
+        </nav>
     </header>
     <main>
-        <nav class="navbar navbar-expand-sm sticky-top inverse ">
-            <ul class="navbar-nav m-auto text-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+
         <section id="about" class="container-fluid text-center">
 
             <!-- Content here -->
-            <article class="container ">
+            <article class="container">
                 <h1 class="section-title">Who am I ?</h1>
-                <p class="section-para"> I am Sidharth, a UI/UX Designer and Developer focused on crafting intuitive
+                <p class="section-para"> I am Sidharth,  a Designer and Developer focused on crafting intuitive
                     web experiences using robust technologies. Coding has been my passion since the days I started
                     working with computers but I
                     started to explore this profession deeper in mid 2018. I enjoy creating beautifully designed,
                     intuitive and functional websites which are highly scalable and optimized.</p>
             </article>
-        </section>
 
-        <section id="skills" class="container-fluid text-center">
-
+            
             <div class="container ">
                 <h1 class="section-title">Skills</h1>
                 <div class="progress">
@@ -82,16 +83,14 @@
                 </div>
 
             </div>
-
         </section>
+
+    
 
         <section id="frameworks" class="container-fluid text-center ">
             <h1 class="section-title">Frameworks</h1>
             <div class="container-fluid">
                 <div class="row">
-
-                   
-
 
                     <article class="card  my-3 bg-dark mx-auto ">
                         <img class="card-img-top frameworks" src="/Assets/wordpress-icon.png" alt="Card image cap">
@@ -114,7 +113,8 @@
 
 
                     <article class="card  my-3 bg-dark mx-auto ">
-                        <img class="card-img-top frameworks" style="filter: invert(100%);" src="/Assets/django-icon.png" alt="Card image cap">
+                        <img class="card-img-top frameworks" style="filter: invert(100%);" src="/Assets/django-icon.png"
+                            alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Django</h5>
 
@@ -122,20 +122,15 @@
                         </div>
                     </article>
 
-                    
+
                     <article class="card  my-3 bg-dark mx-auto ">
-                        <img class="card-img-top frameworks" src="/Assets/foundation.svg" alt="Card image cap">
+                        <img class="card-img-top frameworks" src="/Assets/foundation.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Foundation</h5>
 
                             <a href="https://get.foundation/" class="neon-btn">What's that?</a>
                         </div>
                     </article>
-
-
-
-                  
-
 
                 </div>
             </div>
@@ -150,7 +145,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Project-1</h5>
                         <p class="card-text"></p>
-                        <a href="https://getbootstrap.com/" class="neon-btn">View Documentation</a>
+                        <a href="#" class="neon-btn">View Pen</a>
                     </div>
                 </article>
                 <article class="card my-2 mx-auto bg-dark" style="width: 18rem;">
@@ -159,7 +154,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Project-2</h5>
                         <p class="card-text"></p>
-                        <a href="https://getbootstrap.com/" class="neon-btn">View Documentation</a>
+                        <a href="#" class="neon-btn">View Pen</a>
                     </div>
                 </article>
                 <article class="card my-2 mx-auto bg-dark" style="width: 18rem;">
@@ -168,7 +163,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Project-3</h5>
                         <p class="card-text"></p>
-                        <a href="https://getbootstrap.com/" class="neon-btn">View Documentation</a>
+                        <a href="#" class="neon-btn">View Pen</a>
                     </div>
                 </article>
                 <article class="card my-2 mx-auto bg-dark" style="width: 18rem;">
@@ -177,27 +172,47 @@
                     <div class="card-body">
                         <h5 class="card-title">Project-4</h5>
                         <p class="card-text"></p>
-                        <a href="https://getbootstrap.com/" class="neon-btn">View Documentation</a>
+                        <a href="#" class="neon-btn">View Pen</a>
                     </div>
                 </article>
 
             </div>
 
-
+            <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <span class="page-link">Previous</span>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item disabled">
+                    <span class="page-link">
+                      2
+                    </span>
+                  </li>
+                  <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
 
         </section>
         <section class="footer text-muted">
-           
+
             <div class="footer-social-icons">
-              
+
                 <ul class="social-icons">
-                  
-                    <li><a href="" class="social-icon"> <i class="fab fa-github"></i> </a></li>
-                    <li><a href="" class="social-icon"><i class="fab fa-instagram"></i> </a></li>
-                    <li><a href="https://codepen.io/sidrathi47" class="social-icon"><i class="fab fa-codepen"></i> </a></li>
+
+                    <li><a href="https://github.com/SidRathi47" class="social-icon"> <i class="fab fa-github"></i> </a></li>
+                    <li><a href="https://www.instagram.com/sid_rathi_47/" class="social-icon"><i class="fab fa-instagram"></i> </a></li>
+                    <li><a href="https://codepen.io/sidrathi47" class="social-icon"><i class="fab fa-codepen"></i> </a>
+                    </li>
                 </ul>
             </div>
         </section>
+
+
+
     </main>
     <!-- Optional JavaScript -->
 
@@ -205,7 +220,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 

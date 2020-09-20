@@ -52,8 +52,8 @@ h5 {
 
 .nav-item {
   font-family: "poppins";
-  font-size: 1.2rem;
-  padding: 0 0.7rem;
+  
+
 }
 
 /* Space hero effect */
@@ -378,7 +378,7 @@ h5 {
 }
 
 main {
-  background: url("/Assets/background-banner.jpg");
+  background: url("/Assets/bg.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -392,8 +392,9 @@ main {
   width: 100%;
   top: 0;
   height: auto;
-  background: rgba(0, 0, 0, 0.926);
-  padding: 2rem;
+  background: rgba(0, 0, 0, 0.484);
+  padding: 1rem;
+padding-top: 15vh;
 }
 
 .item-2,
@@ -462,15 +463,7 @@ main {
   color: white;
 }
 
-#skills {
-  background-color: rgba(0, 0, 0, 0.926);
-  position: relative;
-  top: 0%;
-  z-index: 4;
-  width: 100%;
-  height: auto;
-  padding: 2rem;
-}
+
 
 .progress {
   height: 40px;
@@ -490,7 +483,7 @@ main {
   z-index: 4;
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .neon-btn {
@@ -500,6 +493,7 @@ main {
   padding: 0.5rem;
   font-size: 0.8rem;
   color: #15f4ee;
+
 
   font-weight: 400;
   border: 3px solid #15f4ee;
@@ -527,7 +521,7 @@ main {
   z-index: 5;
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .nav-link {
@@ -538,13 +532,22 @@ main {
   color: #15f4edc7;
 }
 
-.card-text,
-.card-title {
-  color: white;
+.pagination {
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
 }
 
-.card {
+
+
+
+.card-title {
+  color: white;
   padding: 0.5rem;
+}
+
+#frameworks .card {
+  padding: 3rem;
 }
 
 .bg-dark {
