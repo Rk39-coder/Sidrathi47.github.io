@@ -130,7 +130,7 @@ h5 {
 }
 
 .subtitle:hover {
-  letter-spacing: 1.5rem;
+  letter-spacing: 1rem;
   text-shadow: 0 0 2px #15f4ee, 0 0 2px #15f4ee;
 }
 
@@ -403,7 +403,8 @@ padding-top: 15vh;
 
 .item-2,
 .item-3 {
-  animation-duration: 5s;
+  animation-duration: 2s;
+  
   animation-timing-function: ease-in-out;
 }
 
