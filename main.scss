@@ -6,13 +6,14 @@ $primary-blue: #00D8FF;
 $primary-black: #242424;
 
 
+html, body { overflow-x: hidden; }
 
 
 body {
     font-family: 'Montserrat';
     position: relative;
     background: #ffffff;
-    width: 100%;
+    width: 100%!important;
     height: 100%;
     margin: 0px;
     padding: 0;
