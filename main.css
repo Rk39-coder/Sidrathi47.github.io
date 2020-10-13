@@ -2,10 +2,22 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Karla:regular,italic,700,700italic);
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat';
   position: relative;
   background: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 #social-bar {
@@ -284,6 +296,11 @@ about-text h2 {
   color: #ffffff;
 }
 
+.wrap {
+  background-color: #242424;
+  min-height: 40vh;
+}
+
 #about {
   min-height: 40vh;
   background: #242424;
@@ -313,8 +330,8 @@ about-text h2 {
 
 .about-progress {
   min-height: 50vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/video-filler.jpeg) center/cover fixed no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/video-filler.jpeg) center/cover fixed no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.397))), url(img/hackernoon.jpg) center/contain fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.397)), url(img/hackernoon.jpg) center/contain fixed no-repeat;
   outline: 5px solid #00D8FF;
   outline-offset: 10px;
 }
@@ -326,11 +343,12 @@ about-text h2 {
 /*##############video-filler###############*/
 #modal-filler {
   min-height: 50vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 145, 52, 0.5)), to(rgba(42, 145, 52, 0.5))), url(img/video-filler.jpeg) center/cover fixed no-repeat;
-  background: linear-gradient(rgba(42, 145, 52, 0.5), rgba(42, 145, 52, 0.5)), url(img/video-filler.jpeg) center/cover fixed no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00d9ff8e), to(#242424)), url(img/Hacker.jpg) center/cover fixed no-repeat;
+  background: linear-gradient(#00d9ff8e, #242424), url(img/Hacker.jpg) center/cover fixed no-repeat;
 }
 
 #modal-filler a {
+  display: none;
   color: #242424;
   font-size: 80px;
   -webkit-animation: myAnimation 3s ease infinite;
@@ -368,8 +386,8 @@ about-text h2 {
 .img-container {
   position: relative;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(181, 181, 14, 0.9)), to(rgba(181, 181, 14, 0.9)));
-  background: linear-gradient(rgba(181, 181, 14, 0.9), rgba(181, 181, 14, 0.9));
+  background: -webkit-gradient(linear, left top, left bottom, from(#00d9ffa1), to(rgba(0, 0, 0, 0.507)));
+  background: linear-gradient(#00d9ffa1, rgba(0, 0, 0, 0.507));
 }
 
 .img-container img {
@@ -391,7 +409,7 @@ about-text h2 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 4rem;
-  color: #00D8FF;
+  color: #242424;
   -webkit-transition: margin 2s ease-in-out, color 0.5s ease-in-out, opacity 0.75s ease-in-out;
   transition: margin 2s ease-in-out, color 0.5s ease-in-out, opacity 0.75s ease-in-out;
   margin-top: -50%;
@@ -399,7 +417,7 @@ about-text h2 {
 }
 
 .search-link:hover {
-  color: #242424;
+  color: #00D8FF;
 }
 
 .img-container:hover .search-link {
@@ -409,28 +427,32 @@ about-text h2 {
 
 /*current project*/
 #current-project {
-  background: #909090;
-  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-          clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  background: #242424;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 #current-project .current-project-photo {
   position: relative;
   min-height: 50vh;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 #current-project .current-project {
   width: 50%;
   height: 60%;
   position: absolute;
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 #current-project .current-project:hover {
   z-index: 10;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 #current-project .current-project-1 {
@@ -573,53 +595,36 @@ about-text h2 {
 }
 
 /*############values##############*/
+#values {
+  background-color: #242424;
+}
+
 .value {
   position: relative;
 }
 
 .value .value-icon {
-  font-size: 60px;
+  font-size: 4rem;
   color: #f1fffa;
-  background: #242424;
-  padding: 25px 35px;
+  background: transparent;
+  padding: 20px 20px 20px 20px;
   border-radius: 50%;
   display: inline-block;
   position: relative;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
-}
-
-.value .value-number {
-  padding: 15px;
-  background: #00D8FF;
-  position: absolute;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 20px;
-  top: -12%;
-  left: 57%;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
-  color: #242424;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .value:hover .value-icon {
-  background: #00D8FF;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.value:hover .value-number {
-  background: #242424;
-  color: #f1fffa;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  color: #00D8FF;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 /*###########reviews#########*/
 #reviews {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 145, 52, 0.7)), to(rgba(42, 145, 52, 0.7))), url(img/banner-1.jpeg);
-  background: linear-gradient(rgba(42, 145, 52, 0.7), rgba(42, 145, 52, 0.7)), url(img/banner-1.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00d9ffa1), to(black));
+  background: linear-gradient(#00d9ffa1, black);
   color: #f1fffa;
 }
 
@@ -645,6 +650,11 @@ about-text h2 {
 }
 
 /*#########team###############*/
+#team {
+  margin: 0;
+  padding: 0;
+}
+
 .member-container {
   position: relative;
   overflow: hidden;
@@ -717,9 +727,13 @@ about-text h2 {
   color: #00D8FF;
 }
 
+#numbers {
+  font-size: 0.7rem;
+  padding: 0;
+}
+
 #contact {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 145, 52, 0.3)), to(rgba(42, 145, 52, 0.3))), url(img/banner-1.jpeg) center/cover fixed no-repeat;
-  background: linear-gradient(rgba(42, 145, 52, 0.3), rgba(42, 145, 52, 0.3)), url(img/banner-1.jpeg) center/cover fixed no-repeat;
+  background: url(img/banner-1.jpeg) center/cover fixed no-repeat;
 }
 
 #contact .height-60 {
@@ -732,7 +746,8 @@ about-text h2 {
   transition: all 2s ease;
 }
 
-#contact #contact .card:hover {
+#contact #contact .card-body
+#contact .card:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -743,7 +758,7 @@ about-text h2 {
 #contact #contact .input-group-text {
   background: #00D8FF;
   border-color: #00D8FF;
-  color: #242424;
+  color: white;
 }
 
 #contact #contact .card input {
@@ -766,14 +781,14 @@ about-text h2 {
   color: #606060;
 }
 
-#contact .contact-btn {
-  color: #f1fffa;
+.contact-btn {
+  color: #ffffff;
   background: #00D8FF;
   -webkit-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
 }
 
-#contact .contact-btn:hover {
+.contact-btn:hover {
   background: transparent;
   border-color: #00D8FF;
   color: #00D8FF;
@@ -796,5 +811,21 @@ footer .footer-icons a:hover {
 
 footer footer h5 {
   color: #f1fffa;
+}
+
+@media screen and (max-width: 991px) {
+  #modal-filler {
+    background: -webkit-gradient(linear, left top, left bottom, from(#00d9ff8e), to(#242424)), url(img/Hacker.jpg) center/contain fixed no-repeat;
+    background: linear-gradient(#00d9ff8e, #242424), url(img/Hacker.jpg) center/contain fixed no-repeat;
+  }
+  .navbar-brand {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .value .value-icon {
+    color: #00D8FF;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 /*# sourceMappingURL=main.css.map */

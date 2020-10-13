@@ -5,11 +5,25 @@
 $primary-blue: #00D8FF;
 $primary-black: #242424;
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+
+
 
 body {
     font-family: 'Montserrat';
     position: relative;
     background: #ffffff;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0;
+    overflow-x: hidden; 
 }
 
 #social-bar {
@@ -282,6 +296,11 @@ about-text h2 {
     color: #ffffff;
 }
 
+.wrap {
+    background-color: $primary-black;
+    min-height: 40vh;
+}
+
 #about {
     min-height: 40vh;
     background: $primary-black;
@@ -308,7 +327,7 @@ about-text h2 {
 
 .about-progress {
     min-height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/video-filler.jpeg)center/cover fixed no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.397)), url(img/hackernoon.jpg)center/contain fixed no-repeat;
     outline: 5px solid$primary-blue;
     outline-offset: 10px;
 }
@@ -323,12 +342,17 @@ about-text h2 {
 
 /*##############video-filler###############*/
 
+
+
 #modal-filler {
     min-height: 50vh;
-    background: linear-gradient(rgba(42, 145, 52, 0.5), rgba(42, 145, 52, 0.5)), url(img/video-filler.jpeg)center/cover fixed no-repeat;
+    background: linear-gradient(#00d9ff8e, $primary-black), url(img/Hacker.jpg)center/cover fixed no-repeat;
 }
 
+
+//Disabled the video anchor tag
 #modal-filler a {
+    display: none;
     color: $primary-black;
     font-size: 80px;
     animation: myAnimation 3s ease infinite;
@@ -357,7 +381,7 @@ about-text h2 {
 .img-container {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(181, 181, 14, 0.9), rgba(181, 181, 14, 0.9));
+    background: linear-gradient(#00d9ffa1,rgba(0, 0, 0, 0.507));
 }
 
 .img-container img {
@@ -376,14 +400,14 @@ about-text h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4rem;
-    color: $primary-blue;
+    color: $primary-black ;
     transition: margin 2s ease-in-out, color 0.5s ease-in-out, opacity 0.75s ease-in-out;
     margin-top: -50%;
     opacity: 0;
 }
 
 .search-link:hover {
-    color: $primary-black;
+    color: $primary-blue;
 }
 
 .img-container:hover .search-link {
@@ -395,25 +419,27 @@ about-text h2 {
 /*current project*/
 
 #current-project {
-    background: #909090;
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-
+    background: $primary-black;
+    
+    transition: all 1s ease-in-out;
 
     .current-project-photo {
         position: relative;
         min-height: 50vh;
+        transition: all 1s ease-in-out;
     }
 
     .current-project {
         width: 50%;
         height: 60%;
         position: absolute;
-        transition: all 2s ease-in-out;
+        transition: all 1s ease-in-out;
     }
 
     .current-project:hover {
         z-index: 10;
         transform: scale(1.1);
+        transition: all 1s ease-in-out;
     }
 
     .current-project-1 {
@@ -542,52 +568,52 @@ about-text h2 {
 
 /*############values##############*/
 
+#values {
+    background-color: $primary-black;
+}
+
 .value {
     position: relative;
 
     .value-icon {
-        font-size: 60px;
+        font-size: 4rem;
         color: #f1fffa;
-        background: $primary-black;
-        padding: 25px 35px;
+        background: transparent;
+        padding: 20px 20px 20px 20px;
         border-radius: 50%;
         display: inline-block;
         position: relative;
-        transition: all 2s ease;
+        transition: all 1s ease-in-out;
 
     }
 
-    .value-number {
-        padding: 15px;
-        background: $primary-blue;
-        position: absolute;
-        border-radius: 50%;
-        display: inline-block;
-        font-size: 20px;
-        top: -12%;
-        left: 57%;
-        transition: all 2s ease;
-        color: $primary-black;
-    }
+    // .value-number {
+    //     padding: 15px;
+    //     background: $primary-blue;
+    //     position: absolute;
+    //     border-radius: 50%;
+    //     display: inline-block;
+    //     font-size: 20px;
+    //     top: -12%;
+    //     left: 57%;
+    //     transition: all 2s ease;
+    //     color: $primary-black;
+    // }
 
 }
 
 
 .value:hover .value-icon {
-    background: $primary-blue;
-    transform: scale(1.2);
+    color: $primary-blue;
+    transform: scale(1.5);
 }
 
-.value:hover .value-number {
-    background: $primary-black;
-    color: #f1fffa;
-    transform: scale(0.9);
-}
+
 
 /*###########reviews#########*/
 
 #reviews {
-    background: linear-gradient(rgba(42, 145, 52, 0.7), rgba(42, 145, 52, 0.7)), url(img/banner-1.jpeg);
+    background: linear-gradient( #00d9ffa1, rgb(0, 0, 0));
     color: #f1fffa;
 
 
@@ -615,6 +641,11 @@ about-text h2 {
 
 
 /*#########team###############*/
+
+#team {
+    margin: 0;
+    padding: 0;
+}
 
 .member-container {
     position: relative;
@@ -686,8 +717,13 @@ about-text h2 {
 }
 
 
+#numbers {
+    font-size: 0.7rem;
+    padding: 0;
+}
+
 #contact {
-    background: linear-gradient(rgba(42, 145, 52, 0.3), rgba(42, 145, 52, 0.3)), url(img/banner-1.jpeg)center/cover fixed no-repeat;
+    background: url(img/banner-1.jpeg)center/cover fixed no-repeat;
 
     .height-60 {
         min-height: 80vh;
@@ -697,6 +733,8 @@ about-text h2 {
         background: rgba(0, 0, 0, 0.5);
         transition: all 2s ease;
     }
+
+    #contact .card-body
 
     #contact .card:hover {
         background: rgba(0, 0, 0, 0.8);
@@ -709,7 +747,7 @@ about-text h2 {
     #contact .input-group-text {
         background: $primary-blue;
         border-color: $primary-blue;
-        color: $primary-black
+        color: white
     }
 
     #contact .card input {
@@ -720,20 +758,21 @@ about-text h2 {
         color: #606060;
     }
 
-    .contact-btn {
-        color: #f1fffa;
-        background: $primary-blue;
-        transition: all 2s ease-in-out;
-    }
-
-    .contact-btn:hover {
-        background: transparent;
-        border-color: $primary-blue;
-        color: $primary-blue;
-    }
-
-
+  
 }
+
+.contact-btn {
+    color: #ffffff;
+    background: $primary-blue;
+    transition: all 2s ease-in-out;
+}
+
+.contact-btn:hover {
+    background: transparent;
+    border-color: $primary-blue;
+    color: $primary-blue;
+}
+
 
 
 footer {
@@ -755,3 +794,21 @@ footer {
     }
 
 }
+
+
+@media screen and (max-width: 991px) {
+    #modal-filler {
+        background: linear-gradient(#00d9ff8e, $primary-black), url(img/Hacker.jpg)center/contain fixed no-repeat;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .value .value-icon {
+        color: $primary-blue;
+        transform: scale(1.2);
+    }
+    
+  }
