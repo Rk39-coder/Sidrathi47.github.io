@@ -6,6 +6,10 @@ html, body {
   overflow-x: hidden;
 }
 
+html {
+  margin-top: 71px;
+}
+
 body {
   font-family: 'Montserrat';
   position: relative;
@@ -58,7 +62,7 @@ body {
 }
 
 .banner-text {
-  font-size: 3.7rem;
+  font-size: 3.5rem;
   text-shadow: #0000006b 3px 3px 3px;
   font-family: 'Poppins';
   font-weight: 200;
@@ -260,6 +264,13 @@ body {
 .skills-icon:hover #php {
   font-size: 100px;
   color: #7377AD;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.skills-icon:hover #ps {
+  font-size: 100px;
+  color: #00D8FF;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
