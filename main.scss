@@ -2,16 +2,29 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Karla:regular,italic,700,700italic);
+
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
 $primary-blue: #00D8FF;
 $primary-black: #242424;
 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
 
 html {
     overflow-x: hidden;
     margin-top: 71px;
 }
 
-
+h1,h2,h3, h4{
+    font-family: 'nunito' ;
+    font-weight: 500;
+}
 
 body {
     font-family: 'Montserrat';
@@ -23,6 +36,8 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+
+
 
 #social-bar {
     justify-content: center;
@@ -244,14 +259,15 @@ min-height: 60vh;
 
 .skills-icon {
     background: $primary-black;
-    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0px 0px, 17.57% 195px, 100% 100%, 0px 100%);
     transition: all 1s ease;
     width: 100%;
     height: 250px;
 }
 
-.skills-icon:hover {
+.skills-icon:hover, .skills-icon:active {
     background: $primary-black;
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
     transition: all 1s ease;
     width: 100%;
     height: 250px;
@@ -270,6 +286,7 @@ min-height: 60vh;
     font-size: 100px;
     color: #DC4D25;
     transition: all 0.6s ease-in-out;
+   
 }
 
 
@@ -304,6 +321,9 @@ min-height: 60vh;
     transition: all 0.6s ease-in-out;
 }
 
+.text-muted {
+    font-size: 1.1rem !important;
+}
 
 /*###########about############*/
 
@@ -329,7 +349,7 @@ about-text h2 {
 #about {
     min-height: 40vh;
     background: $primary-black;
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
 
 }
 
@@ -370,7 +390,8 @@ about-text h2 {
 
 
 #modal-filler {
-    min-height: 50vh;
+    height: 50vh;
+ 
     background: linear-gradient(#00d9ff8e, $primary-black), url(img/Hacker.jpg)center/cover fixed no-repeat;
 }
 
@@ -638,9 +659,11 @@ about-text h2 {
 /*###########reviews#########*/
 
 #reviews {
-    background: linear-gradient(#00d9ffa1, rgb(0, 0, 0));
+    background: linear-gradient($primary-black), url('/img/Artists.jpg');
     color: #f1fffa;
-
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
 
     .customer-text h3 {
         color: $primary-black;
@@ -748,10 +771,10 @@ about-text h2 {
 }
 
 #contact {
-    background: url(img/banner-1.jpeg)center/cover fixed no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.178), rgba(0, 255, 255, 0.253) ) , url(img/banner-1.jpeg)center/cover fixed no-repeat;
 
     .height-60 {
-        min-height: 80vh;
+        min-height: 50vh;
     }
 
     #contact .card {
@@ -819,9 +842,18 @@ footer {
 }
 
 
+
+
+
 @media screen and (max-width: 1120px)  {
+    
+.hover-overlay {
+    display: none;
+}
     #modal-filler {
-        background: linear-gradient(#00d9ff8e, rgba(0, 0, 0, 0.5)), url(img/Hacker.jpg)center/contain fixed no-repeat !important;
+        height: 40vh;
+     
+        background: linear-gradient(#00d9ff8e, $primary-black), url(img/Hacker.jpg)center/cover fixed no-repeat;
     }
 
     .navbar-brand {
@@ -889,7 +921,7 @@ footer {
     }
 
     .text-muted {
-        font-size: 0.8rem !important;
+        font-size: 1rem !important;
     }
 
 .skills-icon {
@@ -919,10 +951,13 @@ footer {
 
 
 @media screen and (max-width: 470px) {
-    #modal-filler {
-        background: linear-gradient(#00d9ff8e, rgba(0, 0, 0, 0.5)), url(img/Hacker.jpg)center/contain fixed no-repeat !important;
-    }
 
+   
+    #modal-filler {
+        height: 40vh;
+     
+        background: linear-gradient(#00d9ff8e, $primary-black), url(img/Hacker.jpg)center/cover fixed no-repeat;
+    }
     .navbar-brand {
         margin-right: auto;
         margin-left: auto;
@@ -934,7 +969,7 @@ footer {
     }
 
     #contact-form {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banner-2.jpeg)center/contain fixed no-repeat;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banner-2.jpeg)center/cover fixed no-repeat;
         clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0 100%);
 
     }

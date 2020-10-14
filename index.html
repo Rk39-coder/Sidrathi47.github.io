@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="/SRC/Bootstrap.css">
   <!--main css-->
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.min.css">
   <!--font awesome-->
   <script src="/SRC/all.min.js"></script>
 
@@ -17,7 +17,7 @@
 
 <body>
 
-  <header id="header">
+  <header id="header" class="wrap">
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand px-2 py-0 " href="#">Sid XD</a>
@@ -60,8 +60,8 @@
                     <i class="fab fa-codepen"></i></a>
                   <a href="https://github.com/SidRathi47" class="mx-2">
                     <i class="fab fa-github"></i></a>
-                    <a href="https://stackoverflow.com/users/14443780/sidharth-rathi" class="mx-2">
-                      <i class="fab fa-stack-overflow"></i></a>
+                  <a href="https://stackoverflow.com/users/14443780/sidharth-rathi" class="mx-2">
+                    <i class="fab fa-stack-overflow"></i></a>
                 </div>
 
               </div>
@@ -73,10 +73,6 @@
     </nav>
 
 
-  </header>
-
-<section  class="container-fluid">
-  
 
     <div class="row">
       <div class="col no-padding">
@@ -98,7 +94,7 @@
                 <a href="#" class="btn btn-lg mb-5 text-uppercase banner-btn">my work</a>
               </div>
             </div>
-          
+
           </div>
           <a class="carousel-control-prev" href="#demo-slider" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon invisible d-none"></span>
@@ -118,18 +114,111 @@
 
     </div>
 
+  </header>
 
-</section>
 
 
-  <!--skills section-->
 
-<section id="skills">
-    <div class="container-fluid skills">
+
+
+
+  <section id="about" class="pb-5">
+    <div class="container">
       <!--     title-->
       <div class="row title mb-5">
         <div class="col text-center">
-          <h1 class="text-uppercase">my skills</h1>
+          <h1 class=" about-headings">About Me</h1>
+          <h3 class="text-capitalize about-headings pb-2">Hey there! i am Sidharth</h3>
+          <a href="#" class="mb-0" style="background-color: #242424; border: none;"><i class="fas fa-id-badge"></i></a>
+          <div class="title-underline"></div>
+
+        </div>
+
+      </div>
+      <!--      end of title-->
+      <div class="row mb-5">
+        <div class="col-md-6 about-progress mb-5 d-flex flex-column justify-content-center">
+          <div class="progress-bars">
+            <!--           html-->
+
+            <div class="bar my-3">
+              <h5 class="text-light text-uppercase d-flex justify-content-between">html<span>90%</span></h5>
+              <div class="progress bg-light">
+
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">90%</div>
+              </div>
+            </div>
+            <!--           end of html -->
+            <!--           html-->
+
+            <div class="bar my-3">
+              <h5 class="text-light text-uppercase d-flex justify-content-between">css & sass<span>80%</span></h5>
+              <div class="progress bg-light">
+
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">80%</div>
+              </div>
+            </div>
+            <!--           end of html -->
+            <!--           html-->
+
+            <div class="bar my-3">
+              <h5 class="text-light text-uppercase d-flex justify-content-between">javascript<span>70%</span></h5>
+              <div class="progress bg-light">
+
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <!--           end of html -->
+            <!--           html-->
+
+            <div class="bar my-3">
+              <h5 class="text-light text-uppercase d-flex justify-content-between">PHP<span>60%</span></h5>
+              <div class="progress bg-light">
+
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">60%</div>
+              </div>
+            </div>
+            <!--           end of html -->
+            <!--           html-->
+
+            <div class="bar my-3">
+              <h5 class="text-light text-uppercase d-flex justify-content-between">Photoshop & Figma<span>70%</span>
+              </h5>
+              <div class="progress bg-light">
+
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0"
+                  aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <!--           end of html -->
+
+
+          </div>
+        </div>
+        <div class="col-md-6 py-5 about-text text-center p-4">
+          <h2 class="text-uppercase">always learning and pushing boundries</h2>
+          <p class="lead text-light">Designing and coding has always been a been a part of my life. With time i am
+            learning new skills and technologies. I love to support budding start-ups and businesses with my design
+            and development solutions.</p>
+          <a href="#" class="btn btn-lg d-block w-75 mx-auto text-uppercase mb-5">download resume</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!--skills section-->
+
+  <section id="skills">
+    <div class="container-fluid skills">
+      <!--     title-->
+      <div class="row title mb-5">
+        <div class="col text-center  mx-auto">
+          <h1 class="">My Skills</h1>
           <h3 class="text-capitalize">Learning new stuff everyday!</h3>
           <a href="#" class="mb-0"><i class="fab fa-react fa-spin"></i></a>
           <div class="title-underline"></div>
@@ -142,12 +231,18 @@
         <!--       item-->
         <div class="col-lg-6 my-5">
           <div class="row">
-            <div class="col-6 d-flex align-items-center skills-icon">
-              <span  id="html5"><i class=" fab fa-html5"></i></span>
-            </div>
+        
+         
+              <div class="col-6 d-flex align-items-center skills-icon">
+
+                <span id="html5"><i class=" fab fa-html5"></i></span>
+              </div>
+          
             <div class="col-6 p-2">
               <h3 class="text-uppercase">html</h3>
-              <p class="text-muted">HTML5, the latest HTML standard, is being used widely to design web pages that are rich in content. The array of new graphics and multimedia elements that it supports and the rich semantics.</p>
+              <p class="text-muted">HTML5, the latest HTML standard, is being used widely to design web pages that are
+                rich in content. The array of new graphics and multimedia elements that it supports and the rich
+                semantics.</p>
             </div>
           </div>
         </div>
@@ -160,7 +255,9 @@
             </div>
             <div class="col-6 p-2">
               <h3 class="text-uppercase">css & sass</h3>
-              <p class="text-muted">CSS3 brings a lot of long-awaited novelties, like rounded corners, shadows, gradients, transitions or animations, as well as new layouts like multi-columns, flexible box or grid layouts and a lot more!</p>
+              <p class="text-muted">CSS3 brings a lot of long-awaited novelties, like rounded corners, shadows,
+                gradients, transitions or animations, as well as new layouts like multi-columns, flexible box or grid
+                layouts and a lot more!</p>
             </div>
           </div>
         </div>
@@ -173,12 +270,13 @@
             </div>
             <div class="col-6 p-2">
               <h3 class="text-uppercase">javascript</h3>
-              <p class="text-muted">Javascript is used both on the client-side and server-side that allows you to make web pages interactive. JavaScript gives web pages interactive elements that engage a user.</p>
+              <p class="text-muted">Javascript is used both on the client-side and server-side that allows you to make
+                web pages interactive. JavaScript gives web pages interactive elements that engage a user.</p>
             </div>
           </div>
         </div>
         <!--        item-->
-    
+
 
         <!--       item-->
         <div class="col-lg-6 my-5">
@@ -188,7 +286,8 @@
             </div>
             <div class="col-6 p-2">
               <h3 class="text-uppercase">PHP</h3>
-              <p class="text-muted">PHP is a server-side programming language. A good benefit of using PHP is that it can interact with many different database languages including MySQL. </p>
+              <p class="text-muted">PHP is a server-side programming language. A good benefit of using PHP is that it
+                can interact with many different database languages including MySQL. </p>
             </div>
           </div>
         </div>
@@ -202,13 +301,13 @@
   </section>
   <!--end of skills section-->
 
-  <!--values-->
+  <!--Tools-->
   <section id="values" class="py-5">
     <!--     title-->
     <div class="row title mb-5">
       <div class="col text-center">
-        <h1 class="text-uppercase" style="color: white;">Tools</h1>
-        <h3 class="text-capitalize" style="color: white;">Swiss knifes for developers!</h3>
+        <h1 class="" style="color: white;">My Tools</h1>
+        <h4 class="text-capitalize" style="color: white;">Swiss knifes for developers!</h4>
         <a href="#" class="mb-0" style="background-color: #242424;"><i class="fas fa-rocket fa-spin"></i></a>
         <div class="title-underline"></div>
 
@@ -223,126 +322,67 @@
         <div class="col-sm-6 col-lg-4 value text-center my-3">
           <span class="value-icon"> <img src="/img/photoshop-cc.svg" width="62.1px" height="62.1px" alt=""> </span>
 
-          <h3 class="my-2 text-uppercase " style="color: white;">Photoshop</h3>
+          <h3 class="my-2 " style="color: white;">Photoshop</h3>
         </div>
         <div class="col-sm-6 col-lg-4 value text-center my-3">
-          <span class="value-icon">  <img src="/img/figma-1.svg"  width="62.1px" height="62.1px" alt=""> </span>
+          <span class="value-icon"> <img src="/img/figma-1.svg" width="62.1px" height="62.1px" alt=""> </span>
 
-          <h3 class="my-2  text-uppercase" style="color: white;">Wordpress</h3>
+          <h3 class="my-2" style="color: white;">Figma</h3>
         </div>
         <div class="col-sm-6 col-lg-4 mx-auto value text-center my-3">
-          <span class="value-icon"> <img src="/img/google-web-designer.svg"  width="62.1px" height="62.1px" alt="">  </span>
+          <span class="value-icon"> <img src="/img/google-web-designer.svg" width="62.1px" height="62.1px" alt="">
+          </span>
 
-          <h3 class="my-2 text-uppercase" style="color: white;">React</h3>
+          <h3 class="my-2" style="color: white;">Google Web Designer</h3>
         </div>
 
+        <div class="col-sm-6 col-lg-4 mx-auto value text-center my-3">
+          <span class="value-icon"> <img src="/img/firefox-browser-developer-edition.svg" width="62.1px" height="62.1px"
+              alt="">
+          </span>
+
+          <h3 class="my-2" style="color: white;">Firefox Dev Edition</h3>
+        </div>
+
+
+        
+        <div class="col-sm-6 col-lg-4 mx-auto value text-center my-3">
+          <span class="value-icon"> <img src="/img/visual-studio-code.svg" width="62.1px" height="62.1px"
+              alt="">
+          </span>
+
+          <h3 class="my-2" style="color: white;">Visual Studio Code</h3>
+        </div>
+
+          
+        <div class="col-sm-6 col-lg-4 mx-auto value text-center my-3">
+          <span class="value-icon" style="color: white;"> <i class="fab fa-github"></i>
+          </span>
+
+          <h3 class="my-2" style="color: white;">Github</h3>
+        </div>
       </div>
     </div>
   </section>
   <!--values-->
 
-  <section class="wrap">
-    <section id="about" class="pb-5">
-      <!--video filler-->
-      <article id="modal-filler" class="d-flex align-items-center justify-content-center">
-        <!-- modal -->
-        <a href="#"><i class="fas fa-play-circle" data-toggle="modal" data-target="#myModal"></i></a>
+
+
+  <!--video filler-->
+  <article id="modal-filler" class="d-flex align-items-center justify-content-center">
+    <!-- modal -->
+    <a href="#"><i class="fas fa-play-circle" data-toggle="modal" data-target="#myModal"></i></a>
 
 
 
 
 
 
-      </article>
+  </article>
 
-      <!-- end of video fliller-->
-      <div class="container">
-        <!--     title-->
-        <div class="row title my-5">
-          <div class="col text-center">
-            <h1 class="text-uppercase about-headings">about me</h1>
-            <h3 class="text-capitalize about-headings">Hey there!, i am Sidharth</h3>
-            <a href="#" class="mb-0"  style="background-color: #242424; border: none;"><i class="fas fa-id-badge"></i></a>
-            <div class="title-underline"></div>
-
-          </div>
-
-        </div>
-        <!--      end of title-->
-        <div class="row mb-5">
-          <div class="col-md-6 about-progress mb-5 d-flex flex-column justify-content-center">
-            <div class="progress-bars">
-              <!--           html-->
-
-              <div class="bar my-3">
-                <h5 class="text-light text-uppercase d-flex justify-content-between">html<span>90%</span></h5>
-                <div class="progress bg-light">
-
-                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100">90%</div>
-                </div>
-              </div>
-              <!--           end of html -->
-              <!--           html-->
-
-              <div class="bar my-3">
-                <h5 class="text-light text-uppercase d-flex justify-content-between">css & sass<span>80%</span></h5>
-                <div class="progress bg-light">
-
-                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100">80%</div>
-                </div>
-              </div>
-              <!--           end of html -->
-              <!--           html-->
-
-              <div class="bar my-3">
-                <h5 class="text-light text-uppercase d-flex justify-content-between">javascript<span>70%</span></h5>
-                <div class="progress bg-light">
-
-                  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100">70%</div>
-                </div>
-              </div>
-              <!--           end of html -->
-              <!--           html-->
-
-              <div class="bar my-3">
-                <h5 class="text-light text-uppercase d-flex justify-content-between">PHP<span>60%</span></h5>
-                <div class="progress bg-light">
-
-                  <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100">60%</div>
-                </div>
-              </div>
-              <!--           end of html -->
-              <!--           html-->
-
-              <div class="bar my-3">
-                <h5 class="text-light text-uppercase d-flex justify-content-between">Photoshop & Figma<span>70%</span>
-                </h5>
-                <div class="progress bg-light">
-
-                  <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100">70%</div>
-                </div>
-              </div>
-              <!--           end of html -->
+  <!-- end of video fliller-->
 
 
-            </div>
-          </div>
-          <div class="col-md-6 py-5 about-text text-center pl-4">
-            <h2 class="text-uppercase">always learning and pushing boundries</h2>
-            <p class="lead text-light">Designing and coding has always been a been a part of my life. With time i am learning new skills and technologies. I love to support budding start-ups and businesses with my design and development solutions.</p>
-            <a href="#" class="btn btn-lg d-block w-75 mx-auto text-uppercase mb-5">download resume</a>
-          </div>
-        </div>
-      </div>
-
-
-    </section>
-  </section>
   <!--end of about-->
   <!--  projects-->
   <section id="projects" class="py-5">
@@ -350,8 +390,8 @@
       <!--     title-->
       <div class="row title mb-5">
         <div class="col text-center">
-          <h1 class="text-uppercase">projects</h1>
-          <h3 class="text-capitalize">Lorem ipsum dolor sit amet.</h3>
+          <h1 class="">Projects</h1>
+          <h3 class="text-capitalize">Made mistakes but learnt a lot from them!</h3>
           <a href="#" class="mb-0"><i class="fas fa-camera"></i></a>
           <div class="title-underline"></div>
 
@@ -374,57 +414,57 @@
       <div class="row grid projects">
         <div class="col-sm-6 col-md-4 my-3 one">
           <article class="img-container">
-            <img src="img/projects-coffee-1.jpeg" class="img-fluid rounded project-image">
-            <a href="#" class="search-link"><i class="fas fa-search"></i></a>
+            <img src="img/Grandma's Sweets.png" class="img-fluid project-image">
+            <a href="/Projects/Grandma Sweets/index.html" class="search-link"><i class="fas fa-search"></i></a>
           </article>
 
         </div>
         <div class="col-sm-6 col-md-4 my-3 one">
           <article class="img-container">
-            <img src="img/projects-tea-1.jpeg" class="img-fluid rounded project-image">
-            <a href="#" class="search-link"><i class="fas fa-search"></i></a>
+            <img src="img/Property Rentals.png" class="img-fluid project-image">
+            <a href="/Projects/Propety Rentals/index.html" class="search-link"><i class="fas fa-search"></i></a>
           </article>
         </div>
         <div class="col-sm-6 col-md-4 my-3 three">
           <article class="img-container">
-            <img src="img/projects-water-1.jpeg" class="img-fluid rounded project-image">
-            <a href="#" class="search-link"><i class="fas fa-search"></i></a>
+            <img src="img/Furniture Store.png" class="img-fluid project-image">
+            <a href="/Projects/Furniture Store/index.html" class="search-link"><i class="fas fa-search"></i></a>
           </article>
         </div>
         <div class="col-sm-6 col-md-4 my-3 three">
           <article class="img-container">
-            <img src="img/projects-coffee-2.jpeg" class="img-fluid rounded project-image">
-            <a href="#" class="search-link"><i class="fas fa-search"></i></a>
+            <img src="img/Car Rental.png" class="img-fluid  project-image">
+            <a href="/Projects/Car Rental Store/index.html" class="search-link"><i class="fas fa-search"></i></a>
           </article>
         </div>
         <div class="col-sm-6 col-md-4 my-3 two">
           <article class="img-container">
-            <img src="img/projects-tea-2.jpeg" class="img-fluid rounded project-image">
-            <a href="#" class="search-link"><i class="fas fa-search"></i></a>
+            <img src="img/Sushi Store.png" class="img-fluid  project-image">
+            <a href="/Projects/Sushi Store/index.html" class="search-link"><i class="fas fa-search"></i></a>
           </article>
         </div>
         <div class="col-sm-6 col-md-4 my-3 two">
           <article class="img-container">
-            <img src="img/projects-water-2.jpeg" class="img-fluid rounded project-image">
-            <a href="#" class="search-link"><i class="fas fa-search"></i></a>
+            <img src="img/Agency.png" class="img-fluid  project-image">
+            <a href="/Projects/Agency Page/index.html" class="search-link"><i class="fas fa-search"></i></a>
           </article>
         </div>
         <div class="col-sm-6 col-md-4 my-3 two">
           <article class="img-container">
-            <img src="img/projects-coffee-3.jpeg" class="img-fluid rounded project-image">
-            <a href="#" class="search-link"><i class="fas fa-search"></i></a>
+            <img src="img/Music app.png" class="img-fluid  project-image">
+            <a href="/Projects/Music App/index.html" class="search-link"><i class="fas fa-search"></i></a>
           </article>
         </div>
         <div class="col-sm-6 col-md-4 my-3 one">
           <article class="img-container">
-            <img src="img/projects-tea-3.jpeg" class="img-fluid rounded project-image">
-            <a href="#" class="search-link"><i class="fas fa-search"></i></a>
+            <img src="img/Admin Panel.png" class="img-fluid  project-image">
+            <a href="/Projects/Admin Panel/index.html" class="search-link"><i class="fas fa-search"></i></a>
           </article>
         </div>
         <div class="col-sm-6 col-md-4 my-3 three">
           <article class="img-container">
-            <img src="img/projects-water-3.jpeg" class="img-fluid rounded project-image">
-            <a href="#" class="search-link"><i class="fas fa-search"></i></a>
+            <img src="img/Cameo.jpg" class="img-fluid project-image">
+            <a href="/Projects/Cameo/index.html" class="search-link"><i class="fas fa-search"></i></a>
           </article>
         </div>
 
@@ -448,16 +488,15 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 py-5 about-text text-center align-self-center">
-            <h2 class="text-uppercase" style="color: white;">my Designs</h2>
-            <p class="lead text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium neque
-              voluptatum nam explicabo provident et, similique necessitatibus, eaque soluta in.</p>
+            <h1 class="p-1" style="color: white;">Frameworks I Use</h1>
+            <h3 class="lead text-light p-2">Less code, More Productivity</h3>
             <a href="#" class="btn btn-lg d-block w-75 mx-auto text-uppercase mb-5 contact-btn">learn more</a>
           </div>
           <div class="col-md-6 current-project-photo my-5">
-            <img src="img/projects-coffee-1.jpeg" class="current-project current-project-1 img-thumbnail">
-            <img src="img/projects-coffee-2.jpeg" class="current-project current-project-2 img-thumbnail">
-            <img src="img/projects-tea-1.jpeg" class="current-project current-project-3 img-thumbnail">
-            <img src="img/projects-tea-2.jpeg" class="current-project current-project-4 img-thumbnail">
+            <img src="img/django-community.svg" class="current-project current-project-1 project-image">
+            <img src="img/bootstrap-4.svg" class="current-project current-project-2 project-image">
+            <img src="img/react-2.svg" class="current-project current-project-3 project-image">
+            <img src="img/wordpress-blue.svg" class="current-project current-project-4 project-image">
 
           </div>
         </div>
@@ -494,9 +533,29 @@
           <div class="carousel-inner">
             <div class="carousel-item active py-5">
               <div class="container text-center col-10 col-sm-8 mx-auto">
-                <img src="img/John doe.jpg" width="150px" height="100px" class="img-fluid rounded-circle" alt="">
+                <img src="img/Paras.SHAH.jpg" width="150px" height="100px" class="img-fluid rounded-circle" alt="">
                 <div class="customer-text">
-                  <h3 class="text-capitalize my-2" style="color: white;">john doe</h3>
+                  <h3 class="text-capitalize my-2" style="color: white;">Paras Shah</h3>
+                  <h4 class="text-capitalize" style="color: white;">Dimme Works</h4>
+                  <p class="lead"><span><i class="fas fa-quote-left mr-2"></i></span>We needed a website and a landing page for our company. The developer was very friendly and did multiple revisions and tests before giving out the final project, We are very happy with the results. Would love to work with him again!</p>
+                  <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+            <!-- <div class="carousel-item  py-5">
+              <div class="container text-center col-10 col-sm-8 mx-auto">
+                <img src="img/John doe.jpg" width="150px" class="img-fluid rounded-circle" alt="">
+                <div class="customer-text">
+                  <h3 class="text-capitalize my-2" style="color: white;">John doe</h3>
                   <h4 class="text-capitalize" style="color: white;">company</h4>
                   <p class="lead"><span><i class="fas fa-quote-left mr-2"></i></span>Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit. Quis dignissimos ducimus deserunt dicta eaque, neque, et harum ut
@@ -513,13 +572,13 @@
               </div>
 
 
-            </div>
-            <div class="carousel-item  py-5">
+            </div> -->
+            <!-- <div class="carousel-item py-5">
               <div class="container text-center col-10 col-sm-8 mx-auto">
                 <img src="img/John doe.jpg" width="150px" class="img-fluid rounded-circle" alt="">
                 <div class="customer-text">
-                  <h3 class="text-capitalize my-2" style="color: white;">John doe</h3>
-                  <h4 class="text-capitalize"  style="color: white;" >company</h4>
+                  <h3 class="text-capitalize my-2" style="color: white;">John Doe</h3>
+                  <h4 class="text-capitalize" style="color: white;">company</h4>
                   <p class="lead"><span><i class="fas fa-quote-left mr-2"></i></span>Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit. Quis dignissimos ducimus deserunt dicta eaque, neque, et harum ut
                     consequuntur impedit.</p>
@@ -535,29 +594,7 @@
               </div>
 
 
-            </div>
-            <div class="carousel-item py-5">
-              <div class="container text-center col-10 col-sm-8 mx-auto">
-                <img src="img/John doe.jpg" width="150px" class="img-fluid rounded-circle" alt="">
-                <div class="customer-text">
-                  <h3 class="text-capitalize my-2"  style="color: white;">John Doe</h3>
-                  <h4 class="text-capitalize"  style="color: white;" >company</h4>
-                  <p class="lead"><span><i class="fas fa-quote-left mr-2"></i></span>Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit. Quis dignissimos ducimus deserunt dicta eaque, neque, et harum ut
-                    consequuntur impedit.</p>
-                  <div class="ratings">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                  </div>
-                </div>
-
-              </div>
-
-
-            </div>
+            </div> -->
           </div>
           <a class="carousel-control-prev" href="#customer-slider" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -575,98 +612,92 @@
       </div>
     </div>
   </section>
-
-
   <!--end of customer reviews-->
 
-     
 
 
 
-
-      <!--end of numbers-->
-      <!--  contact section-->
-      <section id="contact" class="py-5">
-        <div class="container">
-          <div class="row height-60 align-items-center">
-            <div class="col-lg-6 col-sm-10 mx-auto my-3 ">
-              <div class="card text-center">
-                <div class="card-header text-centertext-uppercase">
-                  <h1 class="text-uppercase" style="font-family: 'karla';">contact form</h1>
-                </div>
-                <div class="card-body">
-                  <form>
-                    <div class="input-group my-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="input-name"><i class="fas fa-user"></i></span>
-                      </div>
-                      <input type="text" class="form-control form-control-lg text-capitalize"
-                        placeholder="Enter your Name here">
-                    </div>
-                   
-
-                    <div class="input-group my-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="input-email"><i class="fas fa-envelope"></i></span>
-                      </div>
-                      <input type="email" class="form-control form-control-lg text-capitalize"
-                        placeholder="Enter your email here">
-                    </div>
-
-                    <div class="input-group my-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="input-requirement"><i class="fas fa-question"></i></span>
-                      </div>
-                      <input type="text" class="form-control form-control-lg text-capitalize"
-                        placeholder="Enter your requirement">
-                    </div>
-
-                    <button type="submit" class="btn btn-block btn-lg text-uppercase contact-btn"><i
-                        class="far fa-check-circle mr-2"></i>Submit</button>
-                  </form>
-                </div>
-              </div>
+  <!--  contact section-->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row height-60 align-items-center">
+        <div class="col-lg-6 col-sm-10 mx-auto my-3 ">
+          <div class="card text-center">
+            <div class="card-header text-centertext-uppercase">
+              <h1 class="text-uppercase" style="font-family: 'karla';">contact form</h1>
             </div>
-         
+            <div class="card-body">
+              <form>
+                <div class="input-group my-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="input-name"><i class="fas fa-user"></i></span>
+                  </div>
+                  <input type="text" class="form-control form-control-lg text-capitalize"
+                    placeholder="Enter your Name here">
+                </div>
 
 
+                <div class="input-group my-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="input-email"><i class="fas fa-envelope"></i></span>
+                  </div>
+                  <input type="email" class="form-control form-control-lg text-capitalize"
+                    placeholder="Enter your email here">
+                </div>
+
+                <div class="input-group my-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="input-requirement"><i class="fas fa-question"></i></span>
+                  </div>
+                  <input type="text" class="form-control form-control-lg text-capitalize"
+                    placeholder="Enter your requirement">
+                </div>
+
+                <button type="submit" class="btn btn-block btn-lg text-uppercase contact-btn"><i
+                    class="far fa-check-circle mr-2"></i>Submit</button>
+              </form>
             </div>
-
           </div>
         </div>
-      </section>
-
-      
-      <!-- end of contact section-->
-      <!--footer-->
-      <footer class="container-fluid p-3 ">
-        <div class="row">
-            <p class="text-capitalize text-muted mx-auto my-auto align-self-center">
-              &copy;2020 copyright : <a href="mailto:xodedeveloper@gmail.com" style="color: #00D8FF; font-family: 'karla'; text-decoration: none;">Sidharth.R</a> 
-            
-          </div>
-        </div>
-      </footer>
 
 
-      <!-- Optional JavaScript -->
+
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- end of contact section-->
+  <!--footer-->
+  <footer class="container-fluid p-3 ">
+    <div class="row">
+      <p class="text-capitalize text-muted mx-auto my-auto align-self-center">
+        &copy;2020 copyright : <a href="mailto:xodedeveloper@gmail.com"
+          style="color: #00D8FF; font-family: 'karla'; text-decoration: none;">Sidharth.R</a>
+
+    </div>
+    </div>
+  </footer>
 
 
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="/SRC/Jquery-3.3.1.js"></script>
+  <!-- Optional JavaScript -->
 
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-      </script>
 
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-      </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="/SRC/Jquery-3.3.1.js"></script>
 
-      <script src="/SRC/script.js"></script>
-      <!--  isotope-->
-      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+
+  <script src="/SRC/script.js"></script>
+  <!--  isotope-->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </body>
 
 </html>
