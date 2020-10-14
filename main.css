@@ -2,12 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Karla:regular,italic,700,700italic);
-html,
-body {
-  overflow-x: hidden;
-}
-
 html {
+  overflow-x: hidden;
   margin-top: 71px;
 }
 
@@ -63,10 +59,18 @@ body {
 }
 
 .banner-text {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   text-shadow: #0000006b 3px 3px 3px;
   font-family: 'Poppins';
   font-weight: 200;
+}
+
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .navbar-brand {
@@ -156,8 +160,8 @@ body {
 .item-1,
 .item-2,
 .item-3 {
+  min-height: 60vh;
   height: 60vh;
-  height: 80vh;
   width: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
           clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
@@ -243,11 +247,21 @@ body {
   height: 250px;
 }
 
+.skills-icon:hover {
+  background: #242424;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  width: 100%;
+  height: 250px;
+}
+
 .skills-icon span {
   font-size: 100px;
   color: #909090;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
 }
 
 .skills-icon:hover #html5 {
@@ -823,7 +837,7 @@ footer footer h5 {
   color: #f1fffa;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1120px) {
   #modal-filler {
     background: -webkit-gradient(linear, left top, left bottom, from(#00d9ff8e), to(rgba(0, 0, 0, 0.5))), url(img/Hacker.jpg) center/contain fixed no-repeat !important;
     background: linear-gradient(#00d9ff8e, rgba(0, 0, 0, 0.5)), url(img/Hacker.jpg) center/contain fixed no-repeat !important;
@@ -870,6 +884,123 @@ footer footer h5 {
   .skills-icon #react {
     font-size: 100px;
     color: #00D8FF;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  .skills {
+    padding: inherit;
+    padding-right: 2rem;
+  }
+  .skills-icon span {
+    font-size: 100px;
+    color: #909090;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+  .text-muted {
+    font-size: 0.8rem !important;
+  }
+  .skills-icon {
+    background: #242424;
+    -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    width: 100%;
+    height: 250px;
+  }
+  .skills-icon span {
+    position: relative;
+    left: 40%;
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
+    padding-left: 10px;
+  }
+  .skills-icon #php {
+    font-size: 100px;
+    color: #7377AD;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #modal-filler {
+    background: -webkit-gradient(linear, left top, left bottom, from(#00d9ff8e), to(rgba(0, 0, 0, 0.5))), url(img/Hacker.jpg) center/contain fixed no-repeat !important;
+    background: linear-gradient(#00d9ff8e, rgba(0, 0, 0, 0.5)), url(img/Hacker.jpg) center/contain fixed no-repeat !important;
+  }
+  .navbar-brand {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .value .value-icon {
+    color: #00D8FF;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  #contact-form {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(img/banner-2.jpeg) center/contain fixed no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banner-2.jpeg) center/contain fixed no-repeat;
+    -webkit-clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0 100%);
+            clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0 100%);
+  }
+  .skills-icon #html5 {
+    font-size: 100px;
+    color: #DC4D25;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  .skills-icon #css3 {
+    font-size: 100px;
+    color: #0F91D1;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  .skills-icon #php {
+    font-size: 100px;
+    color: #7377AD;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  .skills-icon #javascript {
+    font-size: 100px;
+    color: #FFDD23;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  .skills-icon #react {
+    font-size: 100px;
+    color: #00D8FF;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  .skills {
+    padding: inherit;
+    padding-right: 2rem;
+  }
+  .skills-icon span {
+    font-size: 100px;
+    color: #909090;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .text-muted {
+    font-size: 0.8rem !important;
+  }
+  .skills-icon {
+    background: #242424;
+    -webkit-clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    width: 100%;
+    height: 250px;
+  }
+  .skills-icon #php {
+    font-size: 80px;
+    color: #7377AD;
     -webkit-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
   }

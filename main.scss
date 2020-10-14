@@ -6,14 +6,12 @@ $primary-blue: #00D8FF;
 $primary-black: #242424;
 
 
-html,
-body {
-    overflow-x: hidden;
-}
-
 html {
+    overflow-x: hidden;
     margin-top: 71px;
 }
+
+
 
 body {
     font-family: 'Montserrat';
@@ -64,10 +62,18 @@ body {
 
 
 .banner-text {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     text-shadow: #0000006b 3px 3px 3px;
     font-family: 'Poppins';
     font-weight: 200;
+
+}
+
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .navbar-brand {
@@ -156,8 +162,8 @@ body {
 .item-1,
 .item-2,
 .item-3 {
+min-height: 60vh;
     height: 60vh;
-    height: 80vh;
     width: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
     transition: ease-in-out 700ms;
@@ -195,6 +201,7 @@ body {
     border: 2px solid #ffffff;
     transition: all 1s;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+
 }
 
 .banner-btn:hover {
@@ -232,19 +239,31 @@ body {
 
 /*###########skills##################*/
 
+
+
+
 .skills-icon {
     background: $primary-black;
     clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
     transition: all 1s ease;
-width: 100%;
-height: 250px;
+    width: 100%;
+    height: 250px;
 }
+
+.skills-icon:hover {
+    background: $primary-black;
+    transition: all 1s ease;
+    width: 100%;
+    height: 250px;
+}
+
 
 
 .skills-icon span {
     font-size: 100px;
     color: #909090;
     transition: all 1s ease-in-out;
+    transform: translateX(30%);
 }
 
 .skills-icon:hover #html5 {
@@ -800,7 +819,7 @@ footer {
 }
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1120px)  {
     #modal-filler {
         background: linear-gradient(#00d9ff8e, rgba(0, 0, 0, 0.5)), url(img/Hacker.jpg)center/contain fixed no-repeat !important;
     }
@@ -854,6 +873,138 @@ footer {
         color: $primary-blue;
         transition: all 0.6s ease-in-out;
     }
+
+
+
+    .skills {
+        padding: inherit;
+        padding-right: 2rem;
+    }
+
+    .skills-icon span {
+        font-size: 100px;
+        color: #909090;
+        transition: all 1s ease-in-out;
+        transform: translateX(10%);
+    }
+
+    .text-muted {
+        font-size: 0.8rem !important;
+    }
+
+.skills-icon {
+    background: $primary-black;
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+    transition: all 1s ease;
+    width: 100%;
+    height: 250px;
+    
+}
+
+.skills-icon span {
+    position: relative;
+    left: 40%;
+    transform: translateX(-60%);
+    padding-left: 10px;
+}
+
+.skills-icon #php {
+    font-size: 100px;
+    color: #7377AD;
+    transition: all 0.6s ease-in-out;
+}
+
+
+}
+
+
+@media screen and (max-width: 470px) {
+    #modal-filler {
+        background: linear-gradient(#00d9ff8e, rgba(0, 0, 0, 0.5)), url(img/Hacker.jpg)center/contain fixed no-repeat !important;
+    }
+
+    .navbar-brand {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .value .value-icon {
+        color: $primary-blue;
+        transform: scale(1.2);
+    }
+
+    #contact-form {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banner-2.jpeg)center/contain fixed no-repeat;
+        clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0 100%);
+
+    }
+
+
+    .skills-icon #html5 {
+        font-size: 100px;
+        color: #DC4D25;
+        transition: all 0.6s ease-in-out;
+    }
+
+
+    .skills-icon #css3 {
+        font-size: 100px;
+        color: #0F91D1;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .skills-icon #php {
+        font-size: 100px;
+        color: #7377AD;
+        transition: all 0.6s ease-in-out;
+    }
+
+
+
+    .skills-icon #javascript {
+        font-size: 100px;
+        color: #FFDD23;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .skills-icon #react {
+        font-size: 100px;
+        color: $primary-blue;
+        transition: all 0.6s ease-in-out;
+    }
+
+
+
+    .skills {
+        padding: inherit;
+        padding-right: 2rem;
+    }
+
+    .skills-icon span {
+        font-size: 100px;
+        color: #909090;
+        transition: all 1s ease-in-out;
+     
+    }
+
+    .text-muted {
+        font-size: 0.8rem !important;
+    }
+
+.skills-icon {
+    background: $primary-black;
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+    transition: all 1s ease;
+    width: 100%;
+    height: 250px;
+}
+
+
+.skills-icon #php {
+    font-size: 80px;
+    color: #7377AD;
+    transition: all 0.6s ease-in-out;
+}
 
 
 }
