@@ -6,7 +6,10 @@ $primary-blue: #00D8FF;
 $primary-black: #242424;
 
 
-html, body { overflow-x: hidden; }
+html,
+body {
+    overflow-x: hidden;
+}
 
 html {
     margin-top: 71px;
@@ -16,11 +19,11 @@ body {
     font-family: 'Montserrat';
     position: relative;
     background: #ffffff;
-    width: 100%!important;
+    width: 100% !important;
     height: 100%;
     margin: 0px;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 #social-bar {
@@ -286,11 +289,11 @@ body {
 
 #about .title a {
     background: black;
-border: 1px solid $primary-blue;
+    border: 1px solid $primary-blue;
 }
 
-#about .about-headings  {
-    color: white!important;
+#about .about-headings {
+    color: white !important;
 }
 
 #about,
@@ -383,7 +386,7 @@ about-text h2 {
 .img-container {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(#00d9ffa1,rgba(0, 0, 0, 0.507));
+    background: linear-gradient(#00d9ffa1, rgba(0, 0, 0, 0.507));
 }
 
 .img-container img {
@@ -402,7 +405,7 @@ about-text h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4rem;
-    color: $primary-black ;
+    color: $primary-black;
     transition: margin 2s ease-in-out, color 0.5s ease-in-out, opacity 0.75s ease-in-out;
     margin-top: -50%;
     opacity: 0;
@@ -422,7 +425,7 @@ about-text h2 {
 
 #current-project {
     background: $primary-black;
-    
+
     transition: all 1s ease-in-out;
 
     .current-project-photo {
@@ -615,7 +618,7 @@ about-text h2 {
 /*###########reviews#########*/
 
 #reviews {
-    background: linear-gradient( #00d9ffa1, rgb(0, 0, 0));
+    background: linear-gradient(#00d9ffa1, rgb(0, 0, 0));
     color: #f1fffa;
 
 
@@ -736,9 +739,7 @@ about-text h2 {
         transition: all 2s ease;
     }
 
-    #contact .card-body
-
-    #contact .card:hover {
+    #contact .card-body #contact .card:hover {
         background: rgba(0, 0, 0, 0.8);
     }
 
@@ -760,7 +761,7 @@ about-text h2 {
         color: #606060;
     }
 
-  
+
 }
 
 .contact-btn {
@@ -800,7 +801,7 @@ footer {
 
 @media screen and (max-width: 991px) {
     #modal-filler {
-        background: linear-gradient(#00d9ff8e, $primary-black), url(img/Hacker.jpg)center/contain fixed no-repeat;
+        background: linear-gradient(#00d9ff8e, rgba(0, 0, 0, 0.5)), url(img/Hacker.jpg)center/contain fixed no-repeat !important;
     }
 
     .navbar-brand {
@@ -812,5 +813,46 @@ footer {
         color: $primary-blue;
         transform: scale(1.2);
     }
-    
-  }
+
+    #contact-form {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banner-2.jpeg)center/contain fixed no-repeat;
+        clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0 100%);
+
+    }
+
+
+    .skills-icon #html5 {
+        font-size: 100px;
+        color: #DC4D25;
+        transition: all 0.6s ease-in-out;
+    }
+
+
+    .skills-icon #css3 {
+        font-size: 100px;
+        color: #0F91D1;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .skills-icon #php {
+        font-size: 100px;
+        color: #7377AD;
+        transition: all 0.6s ease-in-out;
+    }
+
+
+
+    .skills-icon #javascript {
+        font-size: 100px;
+        color: #FFDD23;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .skills-icon #react {
+        font-size: 100px;
+        color: $primary-blue;
+        transition: all 0.6s ease-in-out;
+    }
+
+
+}
