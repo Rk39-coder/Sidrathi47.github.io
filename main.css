@@ -239,6 +239,8 @@ body {
           clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  width: 100%;
+  height: 250px;
 }
 
 .skills-icon span {
