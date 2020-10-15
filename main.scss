@@ -392,7 +392,7 @@ about-text h2 {
 
 .about-progress {
     min-height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.397)), url(img/hackernoon.jpg)center/contain fixed no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.397)), url(img/hackernoon.jpg)center/cover fixed no-repeat;
     outline: 5px solid$primary-blue;
     outline-offset: 10px;
 }
