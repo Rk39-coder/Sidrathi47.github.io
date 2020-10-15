@@ -5,7 +5,7 @@ $(document).ready(function() {
 
  
   //smooth scroll
-  $(".nav-item a").click(function(link) {
+  $(".nav-item a, .scroll-link").click(function(link) {
     link.preventDefault();
     let target = $(this).attr("href");
     $("html, body")
