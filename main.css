@@ -250,6 +250,26 @@ body {
 }
 
 /*###########skills##################*/
+#html-wrap {
+  background-color: #DC4D25;
+}
+
+#css-wrap {
+  background-color: #0F91D1;
+}
+
+#js-wrap {
+  background-color: #FFDD23;
+}
+
+#php-wrap {
+  background-color: #7377AD;
+}
+
+#html-wrap:hover, #css-wrap:hover, #js-wrap:hover, #php-wrap:hover {
+  background-color: #242424;
+}
+
 .skills-icon {
   background: #242424;
   -webkit-clip-path: polygon(0px 0px, 17.57% 195px, 100% 100%, 0px 100%);
@@ -861,8 +881,8 @@ footer footer h5 {
 }
 
 @media screen and (max-width: 1120px) {
-  .hover-overlay {
-    display: none;
+  #html-wrap, #css-wrap, #js-wrap, #php-wrap {
+    background-color: #242424;
   }
   #modal-filler {
     height: 40vh;
