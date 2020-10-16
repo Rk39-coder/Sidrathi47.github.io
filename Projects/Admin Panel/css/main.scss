@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+html {
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body {
+    font-family: "Poppins";
+    min-height: 100vh;
+    background-color: #eeeeee;
+  }
+  
+  /*main styles*/
+  
+  .right-padding {
+    padding-right: 0;
+  }
+  
+  .no-padding {
+    padding: 0;
+  }
+  
+  .max-viewport {
+    min-height: 100vh;
+  }
+  
+  /*navbar */
+  
+
+  
+  .navbar .navbar-brand {
+    color: white; 
+    font-family: 'montserrat';
+   
+    
+  }
+  
+  .navbar {
+    background-color: #222831;
+  }
+  
+  .navbar .nav-link,
+  .navbar .icons {
+    color: #eeeeee;
+   
+  }
+
+  .nav-item .nav-link {
+    transition: all 400ms ease-in-out;
+    font-family: "Poppins";
+  }
+  
+  .navbar .nav-link:hover,
+  .navbar .icons:hover {
+    color: #ffffff;
+ 
+  }
+  
+  .navbar .icon {
+    position: relative;
+    
+  }
+  
+  .navbar .icon::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #00adb5;
+  }
+  
+  /*sidebar*/
+  
+  .sidebar {
+    background-color: #222831;
+  }
+  
+  .sidebar .nav-link,
+  .sidebar .navbar-brand {
+    color: #00adb5;
+    transition: all 400ms ease-in-out;
+  }
+  
+  .sidebar .nav-link:hover,
+  .sidebar .navbar-brand:hover {
+    color: #393e46;
+  }
+  
+  /*inform-card*/
+  
+ 
+  
+  .inform-card .card {
+    background-color: #3185fc;
+    
+  }
+  
+  .inform-card .card .body-icon {
+    font-size: 60px;
+    color: #ffffff;
+    
+  }
+  
+  .inform-card .card .fa,
+  .inform-card .card a {
+    color: rgb(255, 255, 255);
+    
+  }
+  
+  .inform-card .card a:hover {
+    text-decoration: none;
+    color: #fff;
+    
+  }
+  
+  .inform-card .card {
+    color: #fff;
+    font-weight: 400;
+    font-family: 'montserrat';
+  }
+  
+  .inform-card .card-footer {
+    
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
