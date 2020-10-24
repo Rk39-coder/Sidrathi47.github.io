@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Caveat|Mali");
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 :root {
   --mainDark: #242325;
@@ -6,33 +7,27 @@
   --mainWhite: #fff;
   --mainGrey: #eeeeee;
 }
-
 body {
   font-family: "Montserrat", cursive;
   background: var(--mainWhite);
   color: var(--mainDark);
 }
-
 /* global */
 .text-green {
   color: var(--mainGreen);
 }
-
 .text-slant {
-  font-family: "Poppins", cursive;
+  font-family: "Caveat", cursive;
 }
-
 .green__btn {
   color: var(--mainGreen);
   border: 0.1rem solid var(--mainGreen);
   background: transparent;
 }
-
 .green__btn:hover {
   background: var(--mainGreen);
   color: var(--mainWhite);
 }
-
 .title-underline {
   width: 12rem;
   height: 0.3rem;
@@ -40,7 +35,6 @@ body {
   position: relative;
   border-radius: 2rem;
 }
-
 .title-underline__center {
   position: absolute;
   height: 0.6rem;
@@ -48,28 +42,23 @@ body {
   width: 50%;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border-radius: 1rem;
 }
-
 .blockquote {
   border-left: 0.5rem solid var(--mainGreen);
 }
-
 /* end of global */
 /* navbar */
 .navbar {
   background: var(--mainDark) !important;
 }
-
 .phone-icon {
   color: var(--mainGreen);
   border: 0.1rem solid var(--mainGreen);
   padding: 0.5rem;
   border-radius: 50%;
 }
-
 /* end of navbar */
 /* banner */
 .banner-info {
@@ -77,7 +66,6 @@ body {
   background: var(--mainGrey);
   position: relative;
 }
-
 .banner-info__footer {
   background: var(--mainGreen);
   position: absolute;
@@ -85,7 +73,6 @@ body {
   left: 0;
   width: 100%;
 }
-
 .banner-img {
   min-height: calc(100vh - 101px);
   background: url("../img/bannerBcg.jpeg") center/cover fixed no-repeat;
@@ -95,162 +82,128 @@ body {
   background-attachment: fixed; */
   position: relative;
 }
-
 .banner-img__footer {
   background: var(--mainDark);
   position: absolute;
   bottom: 0;
   left: 0;
   height: 104px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 /* end of banner */
 /* about img */
+
 .img-container {
   position: relative;
 }
-
 .featured-icons {
   position: absolute;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
-
 .featured-icon-left {
   background: var(--mainDark);
   padding: 0.5rem;
   display: inline-block;
   color: var(--mainWhite);
 }
-
 .featured-icon-right {
   background: var(--mainGreen);
   padding: 0.5rem;
   display: inline-block;
   color: var(--mainWhite);
 }
-
 /* featured */
 .featured {
   background: var(--mainGrey);
 }
-
 /* contact section */
 .contact {
   background: var(--mainGreen);
   color: var(--mainWhite);
 }
-
 .contact-btn {
   background: transparent;
   border: 0.1rem solid var(--mainWhite);
   color: var(--mainWhite);
 }
-
 .contact-btn:hover {
   background: var(--mainWhite);
   color: var(--mainGreen);
 }
-
 /* services section */
 .services,
 .tour {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/bannerBcg.jpeg") center/cover fixed no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bannerBcg.jpeg") center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/bannerBcg.jpeg") center/cover fixed no-repeat;
 }
-
 .services-info-text {
   position: absolute;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background: var(--mainGreen);
   color: var(--mainWhite) !important;
   margin-bottom: 0;
   text-decoration: none;
   text-align: center;
 }
-
 .services-info-text:hover {
   color: var(--mainDark) !important;
   text-decoration: none;
 }
-
 .service-icon {
   font-size: 2rem;
   color: var(--mainGreen);
   padding: 0.5rem;
   border: 0.1rem solid var(--mainGreen);
   margin-right: 1rem;
-  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-
 .service-icon:hover {
   background: var(--mainGreen);
   color: var(--mainGrey);
 }
-
 .service-link:hover {
   color: var(--mainWhite);
 }
-
 /* gallery section */
 .gallery-btn:hover {
   background: var(--mainGreen);
   color: var(--mainWhite);
 }
-
 .gallery-img-container {
   position: relative;
-  -webkit-transition: all 1s linear;
   transition: all 1s linear;
   overflow: hidden;
 }
-
 .gallery-img-container:hover {
   background: rgba(0, 0, 0, 0.9);
 }
-
 .gallery-img {
-  -webkit-transition: all 1s linear;
   transition: all 1s linear;
 }
-
 .gallery-img-container:hover .gallery-img {
   opacity: 0.3;
 }
-
 .gallery-info {
   position: absolute;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, 100%);
-          transform: translate(-50%, 100%);
+  transform: translate(-50%, 100%);
   background: var(--mainGreen);
   color: var(--mainWhite);
   text-decoration: none;
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-
 .gallery-info:hover {
   text-decoration: none;
   color: var(--mainDark);
 }
-
 .gallery-img-container:hover .gallery-info {
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 
 .gallery-icon {
@@ -259,18 +212,14 @@ body {
   top: 50%;
   left: 50%;
   font-size: 2rem;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   opacity: 0;
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   cursor: pointer;
 }
-
 .gallery-img-container:hover .gallery-icon {
   opacity: 1;
 }
-
 /* tour */
 .tour-icon {
   color: var(--mainGreen);
@@ -280,16 +229,12 @@ body {
   border-radius: 30%;
   font-size: 2rem;
   cursor: pointer;
-  -webkit-transition: all 1s linear;
   transition: all 1s linear;
 }
-
 .tour-icon:hover {
   background: var(--mainGreen);
   color: var(--mainWhite);
 }
-
 .footer {
   background: var(--mainDark);
 }
-/*# sourceMappingURL=main.css.map */
