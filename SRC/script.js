@@ -147,4 +147,4 @@ particlesJS("particles-js", {
 });
 
 
-$(window).resize();
+

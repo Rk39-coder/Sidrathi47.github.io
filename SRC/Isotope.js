@@ -7,8 +7,7 @@
  * https://isotope.metafizzy.co
  * Copyright 2010-2018 Metafizzy
  */
-
-! function (t, e) {
+$(window).load(function(){ ! function (t, e) {
     "function" == typeof define && define.amd ? define("jquery-bridget/jquery-bridget", ["jquery"], function (i) {
         return e(t, i)
     }) : "object" == typeof module && module.exports ? module.exports = e(t, require("jquery")) : t.jQueryBridget = e(t, t.jQuery)
@@ -1241,3 +1240,6 @@ function (t, e) {
         })
     }, d
 });
+
+
+ });
