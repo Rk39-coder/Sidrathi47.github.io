@@ -427,6 +427,10 @@ about-text h2 {
 }
 
 /*#############projects##########*/
+#project {
+  height: auto;
+}
+
 #projects button {
   background: #00D8FF;
   color: #f1fffa;
