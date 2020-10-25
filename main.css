@@ -428,7 +428,7 @@ about-text h2 {
 
 /*#############projects##########*/
 #project {
-  height: auto;
+  height: 100vh;
 }
 
 #projects button {
